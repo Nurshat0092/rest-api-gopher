@@ -1,0 +1,1466 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    /* For fix navbar */
+    /* body { padding-top: 60px; } */
+  </style>
+  <script>
+    if (!window.ezphReactObjs) {
+      window.ezphReactObjs = {}
+    }
+  </script>
+  
+    <meta name="description" content="">
+    <meta name="theme-color" content="#ce3c20">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+<link rel="alternate" href="https://phishinsight.trendmicro.com/en/accounts/?action=login&next=/en/campaign/" hreflang="en" />
+<link rel="alternate" href="https://phishinsight.trendmicro.com/ja/accounts/?action=login&next=/en/campaign/" hreflang="ja" />
+<link rel="alternate" href="https://phishinsight.trendmicro.com/zh-tw/accounts/?action=login&next=/en/campaign/" hreflang="zh" />
+<link rel="alternate" href="https://phishinsight.trendmicro.com/accounts/?action=login&next=/en/campaign/" hreflang="x-default" />
+    
+
+<script src="/static/scripts/3rdParty/pace.min.24d2d5e3e331.js"></script>
+<link href="/static/css/pace-theme-minimal.6305071ead46.css" rel="stylesheet" />
+    <script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","url":"https:\/\/phishinsight.trendmicro.com\/","name":"PhishInsight"}</script>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Nunito|Roboto' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="/static/css/grunt/home.min.c000824058da.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/main.755c5771d77d.css" />
+    <!-- 
+    <link rel="stylesheet" type="text/css" href="/static/css/service_plans.e38536721382.css" />
+     -->
+    <link rel="stylesheet" href="/static/css/grunt/profile_sprites.a0bde46a908f.css">
+    <link rel="stylesheet" href="/static/css/questions.bfc6f7c8c73a.css">
+    <link rel="stylesheet" href="/static/dist/landing.f083cd0f4e62.css?232884432">
+
+    <!--[if IE]>
+    <script src="/static/scripts/bind-polyfill.3c16b3f27d7c.js"></script>
+    <script src="/static/scripts/es6-promise.min.12a2c37e1474.js"></script>
+    <![endif]-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="/static/scripts/html5shiv.0ce8f355891c.js"></script>
+    <script src="/static/scripts/respond.min.afc1984a3d17.js"></script>
+    <![endif]-->
+    <script src="/static/scripts/3rdParty/jquery-2.2.4.min.js"></script>
+    <script src="/static/scripts/Common/load_countries.js?2"></script>
+    <script src="/static/scripts/Common/validators.js?2"></script>
+    <script src="/static/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+    <script src="/static/scripts/3rdParty/i18n.js"></script>
+    <script src="/static/scripts/3rdParty/jquery.history.js"></script>
+    <script src="/static/scripts/i18n/common.detect.689612ae4c90.js"></script>
+    <script src="/static/scripts/i18n/accounts.cf283141daa4.js"></script>
+    <!-- 
+    <script src="/static/scripts/i18n/service_plans.a7fadd858bcc.js"></script>
+     -->
+    <style>
+        body {
+            font-family: 'Open Sans','Noto Sans TC', sans-serif;
+        }
+
+        .modal-content {
+            height: 250px;
+            overflow: auto;
+        }
+
+        #sign_up:hover {
+            background: #f0c01a;
+            border-color: #f0c01a;
+            color: #fff !important;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #recaptcha_container > div, #change_pwd_recaptcha_container > div, #forgetpwd_recaptcha_container > div {
+            margin: auto;
+        }
+
+        #signin-hint {
+            color: #555555;
+            text-align: left;
+            font-size: 14px;
+            margin: 20px 0;
+            line-height: 19px;
+        }
+    </style>
+
+  <title>Phish Insight</title>
+  <link rel="icon" href="/static/favicon.8ad89f6e5c0d.ico">
+  
+<script>
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({'userID': ''});
+</script>
+<script src="/static/scripts/Common/load_ubt.92c46cbdc188.js"></script>
+</head>
+
+    <body style="font-size: 14px; text-align: center; overflow-x: hidden; background-color: #193c84;" itemscope itemtype="http://schema.org/WebPage">
+        <input type='hidden' name='csrfmiddlewaretoken' value='LDhUSJEkzl6uDZmaAjrH4IgEO6RyykJo' />
+        <script type="text/javascript">
+            $.ajaxSetup({
+                headers: { 'X-CSRFToken': $('[name="csrfmiddlewaretoken"]').eq(0).val() }
+            });
+        </script>
+
+        <div class="accounts_nav">
+        
+
+
+<nav id="landing-nav" class="landing-nav navbar navbar-default navbar-static-top">
+  <div class="container">
+    <a class="navbar-brand" href="/en/" aria-label="PhishInsight">
+      <img class="img-responsive" alt="PhishInsight" src="/static/img/promotion/black_logo.35b55487a5d4.png">
+    </a>
+    <span id="landing-menu-toggle" class="mobileMenu mobile navbar-right">&#9776;</span>
+    <ul class="nav navbar-nav links desktop">
+      <li id="landing-nav-page-home">
+        <a href="/en/" aria-label="Home"><span>Home</span></a>
+      </li>
+      <li id="landing-nav-page-simulation">
+        <a href="/en/simulator" aria-label="Simulation"
+          onclick="UBT_event('Simulator', 'Enter','From navigation');"><span>Simulation</span></a>
+      </li>
+      <li id="landing-nav-page-training">
+        <a href="/en/training" aria-label="Training"
+          onclick="UBT_event('Training', 'Enter','From navigation');">
+          <span>Training</span>
+        </a>
+      </li>
+      <li id="landing-nav-page-pricing">
+        <a href="/en/pricing" aria-label="Service Plan"
+          onclick="UBT_event('Pricing', 'Enter','From navigation');">
+          <span>Service Plan</span>
+        </a>
+      </li>
+    </ul>
+    <a href="/en/accounts/?action=register" aria-label="Sign Up"
+      onclick="UBT_event('Sign Up', 'Enter' ,'From navigation');">
+      <button id="sign_up_nav" type="button" class="btn btn-default navbar-btn signUp desktop navbar-right">
+        Sign Up
+      </button>
+    </a>
+    <a href="/en/accounts/?action=login" aria-label="Log In"
+      onclick="UBT_event('Log In', 'Enter','From navigation');">
+      <button id="log_in_nav" type="button" class="btn btn-default navbar-btn login desktop navbar-right">
+        Log In
+      </button>
+    </a>
+  </div>
+</nav>
+<div id="landing-mobile-layer-greyOut" class="greyOut mobile"></div>
+<div id="landing-mobile-layer" class="landing-nav overlay mobile">
+  <a class="overlay-brand" href="#" aria-label="PhishInsight">
+    <img class="img-responsive" alt="PhishInsight" src="/static/img/landing/text-logo.2f673d587ae2.png">
+  </a>
+  <a id="landing-menu-close" aria-label="close" href="javascript:void(0)" class="closebtn">&times;</a>
+  <div class="overlay-content">
+    <hr>
+    <ul class="nav navbar-nav links">
+      <li id="landing-nav-mobile-page-home">
+        <a href="/en/" aria-label="Home"><span>Home</span></a>
+      </li>
+      <li id="landing-nav-mobile-page-simulation">
+        <a href="/en/simulator" aria-label="Simulation"
+          onclick="UBT_event('Simulator', 'Enter','From navigation');"><span>Simulation</span></a>
+      </li>
+      <li id="landing-nav-mobile-page-training">
+        <a href="/en/training" aria-label="Training"
+          onclick="UBT_event('Training', 'Enter','From navigation');"><span>Training</span></a>
+      </li>
+      <li id="landing-nav-mobile-page-pricing">
+        <a href="/en/pricing" aria-label="Service Plan"
+          onclick="UBT_event('Pricing', 'Enter','From navigation');">
+          <span>Service Plan</span>
+        </a>
+      </li>
+    </ul>
+    <hr />
+    <ul class="nav navbar-nav links">
+      <li id="landing-nav-mobile-page-login">
+        <a id="log_in_nav" href="/en/accounts/?action=login" aria-label="Log In"
+          onclick="UBT_event('Log In', 'Enter','From navigation');">
+          <span> Log In </span>
+        </a>
+      </li>
+    </ul>
+    <div class="buttonContainer">
+      <a href="/en/accounts/?action=register" aria-label="Sign Up"
+        onclick="UBT_event('Sign Up', 'Enter' ,'From navigation');">
+        <button id="sign_up_nav" type="button" class="btn btn-default navbar-btn signUp navbar-right">
+          Sign Up
+        </button>
+      </a>
+    </div>
+    <hr />
+    <ul class="nav navbar-nav links languages">
+      <li id="landing-mobile-lang-en">
+        <a id="landing-mobile-lang-en-link" href="/en/"
+          aria-label="English">English</a>
+      </li>
+      <li id="landing-mobile-lang-zhtw">
+        <a id="landing-mobile-lang-zhtw-link" href="/zh-tw/"
+          aria-label="中文">中文</a>
+      </li>
+      <li id="landing-mobile-lang-ja">
+        <a id="landing-mobile-lang-ja-link" href="/ja/"
+          aria-label="日本語">日本語</a>
+      </li>
+    </ul>
+  </div>
+</div>
+        <div id=landing-nav-fixed-bg></div>
+        </div>
+        <div class="accounts_container_outer">
+        <div class="accounts_container_middle">
+        <div class="accounts_container_inner">
+        <div class="accounts_col_1">
+            <a href="/en/">
+                <img class="accounts_logo" src="/static/img/landing/logo.b0e58755a4d5.png">
+            </a>
+        </div>
+        <div class="accounts_col_2">
+            <div class="modal fade right" tabindex="-1" role="dialog" id="login_modal" data-backdrop="false" data-keyboard="false">
+                <div class="modal-dialog" role="document">
+
+                    <form id="login_form" action="/en/login/" method="post">
+                        <!-- <input type="hidden" name="redirect_to" value=""> -->
+                        <input type='hidden' name='csrfmiddlewaretoken' value='LDhUSJEkzl6uDZmaAjrH4IgEO6RyykJo' />
+                        <div style="margin-bottom: 20px;">
+                            <div id="signin" style="margin: 10px;">
+                                <div style="text-align: center;" class="title_style" data-i18n="Sign In"></div>
+                            </div>
+                            <div id="signin-hint" data-i18n="">
+                                
+                            </div>
+                            <div id="welcomelogin" style="display: none; margin: 10px;">
+                                <div style="text-align: center; margin-bottom: 10px;" class="title_style" data-i18n="Welcome!"></div>
+                                <div style="text-align: center;" class="desc_style" data-i18n="Please sign in and start the journey with us."></div>
+                            </div>
+                            <div class="border blue_border" style="height: 44px; width: 100%; vertical-align: top; display: inline-block;">
+                                <div class="icon icon-mail" style="margin: 7px 10px">
+                                </div>
+                                <div class="slash"></div>
+                                <input id="login_email" class="form_input" data-i18n data-i18nattr_placeholder="E-mail Address" type="email" name="email" placeholder="" aria-describedby="sizing-addon1" />
+                            </div>
+                            <div style="margin: 20px;"></div>
+                            <div class="border blue_border" style="height: 44px; width: 100%; vertical-align: top; display: inline-block;">
+                                <div class="icon icon-KEY_icon" style="margin: 7px 10px">
+                                </div>
+                                <div class="slash"></div>
+                                <input class="form_input" name="password" type="password" placeholder="*******" aria-describedby="sizing-addon1" />
+                            </div>
+                            <div style="margin: 20px;"></div>
+                            <div style="text-align: left; margin-bottom: 20px;">
+                                <div class="checkbox checkbox-primary">
+                                    <input id="Checkbox1" type="checkbox" name="remember_me">
+                                    <label data-i18n="Remember me" for="Checkbox1" class="desc_style" style="line-height: 16px;">
+                                        Stay signed in
+                                    </label>
+                                </div>
+                                <div data-i18n="Remember me warning" style="font-size: 14px; color: #999999;">
+                                </div>
+                            </div>
+                            
+                            <div style="margin-bottom: 20px;">
+                                <button data-i18n="Sign In" id="sign_in_btn" class="primary_button" style="width: 100%;" type="submit" onclick="UBT_event('Log In', 'Submit','');this.form.submit();disable_button_with_selector('#sign_in_btn');"></button>
+                            </div>
+                            <div style="margin-bottom: 20px; float: left;">
+                                <a data-i18n="Forgot your password?" style="cursor: pointer; color: #48AFFF;" onclick="UBT_event('Forget Password', 'Enter','From sign in page'); resetpw();">Forgot your password?</a>
+                            </div>
+                            <div style="float: right; margin-bottom: 20px;">
+                                <span data-i18n="First time here?"></span>
+                                <a data-i18n="Sign Up Now" style="cursor: pointer; color: #48AFFF;" onclick="UBT_event('Sign Up', 'Enter','From sign in page'); accept_user ? register_popup() : survey()"></a>
+                            </div>
+                            <div style="clear: both;"></div>
+                        </div>
+                    </form>
+                    <div class="pi_message_warning" style="margin: auto; display: none;">
+                        <img class="icon" src="/static/img/general/warning.png">
+                        <div>
+                            <div data-i18n="CookiesRequiredTitle" class="title">
+                                Cookies Required
+                            </div>
+                            <div data-i18n="CookiesRequiredDesc" class="desc">
+                                Cookies are not enabled on your browser. Please enable cookies in your browser preference to continue.
+                            </div>
+                        </div>
+                    </div>
+                    <div id='login_error_list' style="width: 100%;"></div>
+                </div>
+            </div>
+
+            <div class="modal fade right" tabindex="-1" role="dialog" id="register_modal" data-backdrop="false" data-keyboard="false">
+                <div class="modal-dialog" role="document">
+                    <form action="/en/register/2" onsubmit="return validateRegisterForm()" method="post">
+                        <input type='hidden' name='csrfmiddlewaretoken' value='LDhUSJEkzl6uDZmaAjrH4IgEO6RyykJo' />
+                        <input id="username" style="display: none;" type="text" name="username" />
+                        <div style="margin-bottom: 20px;">
+                            <div style="margin: 10px;">
+                                <div style="text-align: center; margin-bottom: 20px;" class="title_style" data-i18n="Sign Up"></div>
+                            </div>
+                            <div id='register_error_list' style="width: 100%; margin-bottom: 20px;"></div>
+                            <div id="name">
+                                <div class="border blue_border" style="height: 44px; width: 55%; vertical-align: top; display: inline-block; margin-right: calc(5% - 4px);">
+                                    <div class="icon icon-ID_icon" style="margin: 7px 10px">
+                                    </div>
+                                    <div class="slash"></div>
+                                    <input id="first_name" maxlength="30" name='first_name' class="form_input" data-i18n data-i18nattr_placeholder="First Name" placeholder="" />
+                                </div>
+                                <div class="border blue_border" style="height: 44px; width: 40%; text-align: center; vertical-align: top; display: inline-block;">
+                                    <input id="last_name" maxlength="30" name='last_name' style="border: 0; vertical-align: top; height: 42px; width: 90%;" data-i18n data-i18nattr_placeholder="Last Name" placeholder="" />
+                                </div>
+                            </div>
+                            <div style="margin: 20px;"></div>
+                            <div class="border blue_border" style="height: 44px; width: 100%; vertical-align: top; display: inline-block;">
+                                <div class="icon icon-mail" style="margin: 7px 10px">
+                                </div>
+                                <div class="slash"></div>
+                                <input id="email" class="form_input" data-i18n data-i18nattr_placeholder="E-mail Address" type="text" name="email" placeholder="" aria-describedby="sizing-addon1"
+                                    onblur="check_domain(this.value);" />
+                            </div>
+                            <div style="margin: 20px;"></div>
+                            <div class="border blue_border" style="height: 44px; width: 100%; vertical-align: top; display: inline-block;">
+                                <div class="icon icon-KEY_icon" style="margin: 7px 10px">
+                                </div>
+                                <div class="slash"></div>
+                                <input id="password" class="form_input" data-i18n data-i18nattr_placeholder="Password" type="password" name="password1" placeholder="" aria-describedby="sizing-addon1" />
+                            </div>
+                            <div style="margin: 20px;"></div>
+                            <div class="border blue_border" style="height: 44px; width: 100%; vertical-align: top; display: inline-block;">
+                                <div class="icon icon-confirm_password" style="margin: 7px 10px">
+                                </div>
+                                <div class="slash"></div>
+                                <input id="password2" class="form_input" data-i18n data-i18nattr_placeholder="Confirm Password" type="password" name="password2" placeholder="" aria-describedby="sizing-addon1" />
+                            </div>
+                            <div style="margin: 20px;"></div>
+                            <div class="border" style="height: 44px; width: 100%; vertical-align: top; display: inline-block; text-align: left;">
+                                <div class="icon icon-country_icon" style="margin: 7px 10px">
+                                </div>
+                                <div class="slash"></div>
+                                <select name='country' style="color: #aaa;" id="country_list" class="form_select">
+                                    <option data-i18n="Country" style="color: #aaa;" value="-1">Country</option>
+                                </select>
+                                <i class="fa fa-caret-down select_arrow_icon"></i>
+                            </div>
+                            <div style="margin: 20px;"></div>
+                            <div>
+                                <div class="checkbox checkbox-primary">
+                                    <input id="tos" type="checkbox" name="tos">
+                                    <label data-i18n="read Policy" for="tos" style="line-height: 1.2;text-align: left;"></label>
+                                </div>
+                            </div>
+                            <div style="margin: 20px;"></div>
+                            <div style="margin-bottom: 20px;">
+                                <button id="btn_create_account" data-i18n="Create Account" style="width: 100%;" class="primary_button" type="submit" onclick="UBT_event('Sign Up', 'Submit','');"></button>
+                            </div>
+                            <div style="text-align: right; margin-bottom: 20px;">
+                                <span data-i18n="Already have an account?"></span>
+                                <a data-i18n="Sign In" id="sign_in" style="cursor: pointer; color: #48AFFF;" onclick="UBT_event('Log In', 'Enter','From sign up page'); SignIn()" itemprop="url"></a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="modal fade right" tabindex="-1" role="dialog" id="check_mail_modal" data-backdrop="false" data-keyboard="false">
+                <div class="modal-dialog" role="document">
+                    <div style="margin-bottom: 20px;">
+                        <div style="margin: 10px;">
+                            <div style="text-align: center;" class="title_style" data-i18n="Check Your Inbox"></div>
+                        </div>
+                        <div style="margin: 10px;">
+                            <div id="inboxchecking_description" style="text-align: left;">
+                                <div><b class="desc_style" data-i18n="Hi user" data-i18npara_first_name=""></b></div>
+                                <div class="desc_style" data-i18n="Thanks for signing up!"></div>
+                                <div class="desc_style" data-i18n="activate message" data-i18npara_mail=""></div>
+                            </div>
+                        </div>
+                        <hr style="margin: 0 10px 10px; border-top-color: rgb(204, 204, 204);" />
+                        <div style="text-align: left;">
+                            <i id="checkbox_msg_1" onclick="$('#checkbox_msg_1').hide();$('#checkbox_msg_2').show();$('#checkbox_msg_3').show();" class="fa fa-caret-right" style="color: #48AFFF; font-size: 2em; cursor: pointer; padding-top: 4px; padding-bottom: 4px; margin-left: 10px;" aria-hidden="true">
+                                <span class="desc_style" style="color: #48AFFF; vertical-align: text-top; line-height: 30px;" data-i18n="Having trouble finding the message?"></span>
+                            </i>
+                            <i id="checkbox_msg_2" onclick="$('#checkbox_msg_1').show();$('#checkbox_msg_2').hide();$('#checkbox_msg_3').hide();" class="fa fa-caret-down" style="color: #48AFFF; font-size: 2em; cursor: pointer; padding-top: 4px; padding-bottom: 4px; display: none; margin-left: 10px;" aria-hidden="true">
+                                <span class="desc_style" style="color: #48AFFF; vertical-align: text-top; line-height: 30px;" data-i18n="Having trouble finding the message?"></span>
+                            </i>
+                        </div>
+                        <div id="checkbox_msg_3" style="margin-left: 28px; display: none; text-align: left;">
+                            <ul style="list-style-type: disc;">
+                                <li data-i18n="checking activate message"></li>
+                                <li data-i18n="Click the Resend button below to try again if necessary."></li>
+                                <li id="contactSupport" data-i18n="Contact Phish Insight Support if you still cannot find the message."></li>
+                            </ul>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <button id="btn_inboxchecking_resend" data-i18n="Resend" class="primary_button" type="button" style="width: 45%;" onclick="UBT_event('Sign Up', 'Resend',''); Resend()"></button>
+                            <button id="btn_inboxchecking_close" data-i18n="Sign In" class="primary_button" type="button" style="width: 45%; margin-left: 5%;" onclick="UBT_event('Log In', 'Enter','From sign up message sent page'); welcome_signin()"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade right" tabindex="-1" role="dialog" id="change_password_modal" data-backdrop="false" data-keyboard="false">
+                <div class="modal-dialog" role="document">
+                    <div style="margin-bottom: 20px;">
+                        <form id="change_password_form" action="/en/login/" onsubmit="return validateChangePasswordForm()" method="post">
+                            <div style="margin: 20px 0 10px 0;">
+                                <div class="title_style" style="text-align: center;" data-i18n="Change Password"></div>
+                            </div>
+                            <div style="text-align: left; padding: 10px 0px;">
+                                <p>
+                                    <span data-i18n="Password policy change desc 1"></span><br />
+                                    <span data-i18n="Password policy change desc 2"></span>
+                                </p>
+                                <p>
+                                    <ul style="padding-left: 25px;">
+                                        <li type="disc" data-i18n="Password policy rule 1"></li>
+                                        <li type="disc" data-i18n="Password policy rule 2"></li>
+                                        <li type="disc" data-i18n="Password policy rule 3"></li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="border blue_border" style="height: 44px; width: 100%; vertical-align: top; display: inline-block;">
+                                <div class="icon icon-KEY_icon" style="margin: 7px 10px">
+                                </div>
+                                <div class="slash"></div>
+                                <input id="old_password" type="password" name='old_password' class="form_input" data-i18n data-i18nattr_placeholder="Old Password" />
+                            </div>
+                            <div style="margin: 20px;"></div>
+                            <div class="border blue_border" style="height: 44px; width: 100%; vertical-align: top; display: inline-block;">
+                                <div class="icon icon-confirm_password" style="margin: 7px 10px">
+                                </div>
+                                <div class="slash"></div>
+                                <input id="new_password" type="password" name="password" class="form_input" data-i18n data-i18nattr_placeholder="New Password" />
+                            </div>
+                            <div style="margin: 20px;"></div>
+                            <div class="border red_border" style="height: 44px; width: 100%; vertical-align: top; display: inline-block;">
+                                <div class="icon icon-confirm_password" style="margin: 7px 10px">
+                                </div>
+                                <div class="slash"></div>
+                                <input id="confirm password" type="password" name='confirm_password' class="form_input" data-i18n data-i18nattr_placeholder="Confirm Password" />
+                            </div>
+                            <div style="margin: 25px 0 20px 0;">
+                                <div id="change_pwd_recaptcha_container" style="transform: scale(1.3); -webkit-transform: scale(1.3); transform-origin: -10 0; -webkit-transform-origin: -10 0;"></div>
+                            </div>
+                            <button id="change_password" type="submit" style="width: 100%;" class="primary_button" data-i18n="Change Password"></button>
+                            <input type="hidden" name="email" id="email_for_pwd_changing" />
+                        </form>
+                        <div id="change_password_error_list" style="width: 100%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade right" tabindex="-1" role="dialog" id="resetpw_modal" data-backdrop="false" data-keyboard="false">
+                <div class="modal-dialog" role="document">
+                    <div style="margin-bottom: 20px;">
+                        <div style="margin: 10px;">
+                            <div style="text-align: center; margin-bottom: 10px;" class="title_style" data-i18n="Forgot your password?"></div>
+                            <div style="text-align: center;" class="desc_style" data-i18n="Provide your email address to reset your password."></div>
+                        </div>
+                        <div class="border blue_border" style="height: 44px; width: 100%; vertical-align: top; display: inline-block;">
+                            <div class="icon icon-mail" style="margin: 7px 10px">
+                            </div>
+                            <div class="slash"></div>
+                            <input class="form_input" id="reset_email" data-i18n data-i18nattr_placeholder="E-mail Address" type="text" name="email" placeholder="" aria-describedby="sizing-addon1" />
+                        </div>
+                        <div style="margin: 20px;">
+                            <div id="forgetpwd_recaptcha_container"></div>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <button data-i18n="Submit" id="reset_passwd_btn" class="primary_button" style="width: 100%;" type="button" onclick="UBT_event('Forget Password', 'Submit');reset_pssword_request()"></button>
+                        </div>
+                        <div style="float: right; margin-bottom: 20px;">
+                            <span data-i18n="Back to 1"></span>
+                            <a data-i18n="Sign In" id="sign_in" style="cursor: pointer; color: #48AFFF;" onclick="UBT_event('Log In', 'Enter','From forgot password page'); SignIn()" itemprop="url"></a>
+                            <span data-i18n="Back to 2"></span>
+                        </div>
+                    </div>
+                    <div id="forget_password_error_list" style="width: 100%; display: inline-block;"></div>
+                </div>
+            </div>
+
+            <div class="modal fade right" tabindex="-1" role="dialog" id="resetpw_sent_modal" data-backdrop="false" data-keyboard="false">
+                <div class="modal-dialog" role="document">
+                    <div style="margin-bottom: 20px;">
+                        <div style="margin: 10px;">
+                            <div style="text-align: center;" class="title_style" data-i18n="Message Sent"></div>
+                        </div>
+                        <div style="margin: 10px;">
+                            <div class="desc_style" style="text-align: left;" data-i18n="reset password 1">
+                            </div>
+                        </div>
+                        <hr style="margin: 0 0 10px; border-top-color: rgb(204, 204, 204);" />
+                        <div style="text-align: left;">
+                            <i id="trouble_msg_1" onclick="$('#trouble_msg_1').hide();$('#trouble_msg_2').show();$('#trouble_msg_3').show();" class="fa fa-caret-right" style="color: #48AFFF; font-size: 2em; cursor: pointer;" aria-hidden="true">
+                                <span class="desc_style" style="color: #48AFFF; vertical-align: text-top; line-height: 30px;" data-i18n="reset password 2"></span>
+                            </i>
+                            <i id="trouble_msg_2" onclick="$('#trouble_msg_1').show();$('#trouble_msg_2').hide();$('#trouble_msg_3').hide();" class="fa fa-caret-down" style="color: #48AFFF; font-size: 2em; cursor: pointer; display: none;" aria-hidden="true">
+                                <span class="desc_style" style="color: #48AFFF; vertical-align: text-top; line-height: 30px;" data-i18n="reset password 2"></span>
+                            </i>
+                        </div>
+                        <div id="trouble_msg_3" style="margin-left: 28px; display: none; text-align: left;">
+                            <ul style="list-style-type: disc;">
+                                <li class="desc_style" style="text-align: left; line-height: 1.7;" data-i18n="reset password 3"></li>
+                                <li class="desc_style" style="text-align: left; line-height: 1.7;" data-i18n="reset password 4"></li>
+                            </ul>
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <button data-i18n="Got it" class="primary_button" style="width: 100%;" type="button" onclick="UBT_event('Log In', 'Enter','From reset password message sent page'); finish_forget_password()"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade right" id="regist_survey_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="false" data-keyboard="false">
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <!--  -->
+        <script src="/static/scripts/3rdParty/react.min.js"></script>
+        <script src="/static/scripts/3rdParty/react-dom.min.js"></script>
+        <script src="/static/scripts/home/message_box.js"></script>
+        <script src="/static/scripts/home/regist_questions.js"></script>
+        <script src="/static/scripts/home/survey.js"></script>
+        <script>
+            History.Adapter.bind(window,'statechange',function(){ // Note: We are using statechange instead of popstate
+                var State = History.getState(); // Note: We are using History.getState() instead of event.state
+            });
+
+            var getUrlParameter = function getUrlParameter(sParam) {
+                var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+                    sURLVariables = sPageURL.split('&'),
+                    sParameterName,
+                    i;
+
+                for (i = 0; i < sURLVariables.length; i++) {
+                    sParameterName = sURLVariables[i].split('=');
+
+                    if (sParameterName[0] === sParam) {
+                        return sParameterName[1] === undefined ? true : sParameterName[1];
+                    }
+                }
+            };
+
+            function updateQueryStringParameter(uri, key, value) {
+                var re = new RegExp("([?&])" + key + "=.*?(&|$)", "i");
+                var separator = uri.indexOf('?') !== -1 ? "&" : "?";
+                if (uri.match(re)) {
+                    return uri.replace(re, '$1' + key + "=" + value + '$2');
+                }
+                else {
+                    return uri + separator + key + "=" + value;
+                }
+            }
+
+            function updatePageHeaderAndActionCallback(title, desc, action) {
+                    document.title = i18n_lang(title);
+                    $('meta[name=description]').attr('content', i18n_lang(desc));
+                    updateQueryStringParameter(window.location.href, 'action', action);
+            }
+
+            function updatePageHeaderAndAction(title, desc, action) {
+                    History.replaceState(null, null, updatePageHeaderAndActionCallback(title, desc, action));
+            }
+        </script>
+        <script type="text/javascript">
+            // var nextUrl = ''
+
+            // function onSignInSubmitClick(e) {
+            //     if (nextUrl) {
+            //         var lang = window.location.pathname.split('/')[1]
+            //         window.history.pushState('', '', window.location.pathname + '?next=/' + lang + '/' + nextUrl);
+            //     }
+            //     return true;
+            // }
+
+            // function setNextUrl(page) {
+            //     nextUrl = page;
+            // }
+
+            // function setRedirectToPageOption (page) {
+            //     $('#login_form > input[name="redirect_to"]').val(page)
+            // }
+            // (function () {
+            //     var CookieAgreementBarFactory = React.createFactory(CookieAgreementBar)
+            //     ReactDOM.render(CookieAgreementBarFactory({
+            //         message: 'We use cookies to ensure that we give you the best experience on our website. By selecting to close this alert, you are agreeing to allowing this site to use 3rd party cookies.',
+            //         expiresIn: 365  // days
+            //     }), document.getElementById('cookieAgreementBar'))
+            // })()
+
+            function checkCookie(){
+                var cookieEnabled = navigator.cookieEnabled;
+                if (typeof navigator.cookieEnabled == 'undefined' && !cookieEnabled){
+                    document.cookie = 'testcookie';
+                    cookieEnabled = document.cookie.indexOf('testcookie') != -1;
+                }
+                return cookieEnabled;
+            }
+            if (!checkCookie()) {
+                // show should enable cookie warning on the login modal
+                $('.pi_message_warning').show();
+            }
+
+            // country list dropdown on register modal
+            var registerCountryList = document.getElementById('country_list')
+            registerCountryList.addEventListener('change',function(){
+            if(registerCountryList.value == '-1') {
+                registerCountryList.style.color = '#aaa';
+            } else {
+                registerCountryList.style.color = '#111';
+            }
+            });
+            var COUNTRIES = [];
+            load_countries(function(results) {
+                COUNTRIES = results;
+                for (var i = 0; i < COUNTRIES.length; i++) {
+                    var newOp = document.createElement("option");
+                    newOp.style.color = "#111";
+                    newOp.value = COUNTRIES[i].ISO3;
+                    newOp.text = COUNTRIES[i].COUNTRY;
+                    registerCountryList.options.add(newOp);
+                }
+                var surveyCountryList = document.getElementById('survey_country_list');
+                if (surveyCountryList) {
+                    for (var i = 0; i < COUNTRIES.length; i++) {
+                        var newOp = document.createElement("option");
+                        newOp.style.color = "#111";
+                        newOp.value = COUNTRIES[i].ISO3;
+                        newOp.text = COUNTRIES[i].COUNTRY;
+                        surveyCountryList.options.add(newOp);
+                    }
+                }
+            })
+
+            // // number of employees list dropdown on introduce yourself modal
+            // document.getElementById('number_of_employees').addEventListener('change',function(){
+            //     if(document.getElementById('number_of_employees').value == '-1')
+            //         document.getElementById('number_of_employees').style.color = '#aaa';
+            //     else
+            //         document.getElementById('number_of_employees').style.color = '#111';
+            // });
+            document.getElementById('first_name').addEventListener('keypress',
+                function (e) {
+                    var keyCode = e.which || e.keyCode;
+                    //   if ((keyCode > 32 && keyCode < 48 || keyCode > 57 && keyCode < 65 || keyCode > 90 && keyCode < 97 || keyCode > 122 && keyCode < 127) && keyCode != 39 && keyCode != 45 && keyCode != 46 && keyCode != 95)
+                    if (keyCode == 59 || keyCode == 60 || keyCode == 62)
+                        e.preventDefault();
+                }
+            );
+            document.getElementById('last_name').addEventListener('keypress',
+                function (e) {
+                    var keyCode = e.which || e.keyCode;
+                    //   if ((keyCode > 32 && keyCode < 48 || keyCode > 57 && keyCode < 65 || keyCode > 90 && keyCode < 97 || keyCode > 122 && keyCode < 127) && keyCode != 39 && keyCode != 45 && keyCode != 46 && keyCode != 95)
+                    if (keyCode == 59 || keyCode == 60 || keyCode == 62)
+                        e.preventDefault();
+                }
+            );
+            document.getElementById('email').addEventListener('keypress',
+                function (e) {
+                    var keyCode = e.which || e.keyCode;
+                    if ((keyCode > 31 && keyCode < 48 || keyCode > 57 && keyCode < 65 || keyCode > 90 && keyCode < 97 || keyCode > 122 && keyCode < 127) && keyCode != 45 && keyCode != 46 && keyCode != 64 && keyCode != 95)
+                        e.preventDefault();
+                }
+            );
+            // document.getElementById('company_name').addEventListener('keypress',
+            //     function (e) {
+            //         var keyCode = e.which || e.keyCode;
+            //         //   if ((keyCode > 32 && keyCode < 48 || keyCode > 57 && keyCode < 65 || keyCode > 90 && keyCode < 97 || keyCode > 122 && keyCode < 127) && keyCode != 39 && keyCode != 45 && keyCode != 46 && keyCode != 95)
+            //         if (keyCode == 59 || keyCode == 60 || keyCode == 62)
+            //             e.preventDefault();
+            //     }
+            // );
+            // document.getElementById('department').addEventListener('keypress',
+            //     function (e) {
+            //         var keyCode = e.which || e.keyCode;
+            //         //   if ((keyCode > 32 && keyCode < 48 || keyCode > 57 && keyCode < 65 || keyCode > 90 && keyCode < 97 || keyCode > 122 && keyCode < 127) && keyCode != 39 && keyCode != 45 && keyCode != 46 && keyCode != 95)
+            //         if (keyCode == 59 || keyCode == 60 || keyCode == 62)
+            //             e.preventDefault();
+            //     }
+            // );
+            // document.getElementById('mobilephone').addEventListener('keypress',
+            //    function(e){
+            //        var keyCode = e.which || e.keyCode;
+            //        if ((keyCode > 57 || keyCode < 48) && keyCode !== 46 && keyCode !== 8 && (keyCode < 35 || keyCode > 40)) e.preventDefault();
+            //    }
+            // );
+            var bad_domains = ['uuluu.net', 'yahoo.co.in', 'eoopy.com', 'mailboxt.com', 'enayu.com', 'mailmyrss.com', 'live.com.au', 'smlmail.com', 'yopmail.com', 'homedepinst.com', 'muyoc.com', 'gmx.fr', 'outlook.de', 'hack.id', 'hotmail.com.tw', 'connect.hku.hk', 'outlook.fr', 'coalamails.com', '2go-mail.com', 'yahoo.ro', 'email.com', 'outlook.it', 'lagsixtome.com', 'googlemail.com', 'outlook.dk', 'qmail.id', 'mailnesia.com', 'ya.ru', 'hushmail.com', 'sohu.com', 'hotmail.es', 'protonmail.ch', 'icloud.com', 'live.com', 'outlook.com', 'johnderasia.com', 'mail.com', 'funadesp.org.br', 'aol.com', 'live.fr', 'aim.com', 'kimo.com', 'keemail.me', 'yahoo.co.uk', 'hotmail.com', 'outlook.sa', 'protonmail.com', 'msn.com', 'iillii.org', 'bcaoo.com', 'mailinator.com', 'hotmail.co.uk', 'emailhost99.com', 'gmail.com', 'qq.com', 'outlook.pt', 'pm.me', 'yahoo.com', 'web.de', 'outlook.ph', 'awdrt.net', 'abv.bg', 'yahoo.com.hk', 'outlook.es', 'emailn.de', 'grr.la', 'mail.ru', 'me.com', 'yahoo.com.tw', 'hngf.com.tw', 'abyssmail.com', 'hotmail.rs', 'backboxindonesia.or.id', 'yahoo.de', 'ymail.com', 'cuoly.com'];
+            function check_domain(email){
+                document.getElementById('register_error_list').innerHTML = '';
+                if(email.indexOf('@') == -1) return;
+                if(bad_domains.indexOf(email.substring(email.indexOf('@') + 1).toLowerCase()) != -1){
+                    var Factory = React.createFactory(MsgBox);
+                    ReactDOM.render(
+                        Factory({msg_type: 'error', title: 'Free Webmail Providers are Banned', i18n: i18n_lang,
+                            content: 'That email address is at a known free webmail provider. Please register using the email address of your organization.'}),
+                        document.getElementById('register_error_list'));
+                }
+            }
+            var accept_user = true;
+            function goto(lang) {
+                window.location = lang;
+            };
+            var register_popup = function () {
+                $('#login_modal').modal('hide');
+                $('#register_modal').modal();
+                // $('#register_modal').modal({ backdrop: 'static', keyboard: false });
+            };
+            var survey = function() {
+                $('#login_modal').modal('hide');
+                $('#regist_survey_modal').modal('show');
+                var Factory = React.createFactory(SurveyPanel);
+                ReactDOM.render(
+                    Factory({
+                        i18n: i18n_lang,
+                        close: function () { $('#regist_survey_modal').modal('hide');
+                            //   $('body').css('overflow-y','auto');
+                            $('#regist_survey_modal').css('overflow-y','hidden');  },
+                        next: function () {
+                            $.post(
+                                "/en/survey",
+                                {
+
+                                    first_name: document.getElementById('survey_first_name').value,
+                                    last_name: document.getElementById('survey_last_name').value,
+                                    email: document.getElementById('survey_email').value,
+                                    company_name: document.getElementById('survey_company_name').value,
+                                    country: document.getElementById('survey_country_list').value,
+                                    phone: document.getElementById('survey_mobilephone').value,
+                                    number_of_employees: document.getElementById('survey_number_of_employees').value,
+                                    industry: document.getElementById('survey_industry').value,
+                                    department: document.getElementById('survey_department').value
+                                }, function (data) {
+                                    if (data == 1) {
+                                        alert(i18n_lang('We got your request, please kindly wait.'));
+                                        $('#regist_survey_modal').modal('hide');
+                                        $('#login_modal').modal('show');
+                                    }
+                                    else if (data == -1) {
+                                        alert(i18n_lang('Email has been registered, please use another one.'));
+                                    }
+                                    else if (data == -2) {
+                                        alert(i18n_lang('The domain of email is not allowed.'));
+                                    }
+                                    else if (data == -3) {
+                                        alert(i18n_lang('System is busy, please try again.'));
+                                    }
+                                    else {
+                                        alert(i18n_lang('System is busy, please try again.'));
+                                    }
+                                }
+                            );
+                        },
+                        goSignIn: function () {
+                            $('#regist_survey_modal').modal('hide');
+                            $('#login_modal').modal('show');
+                        }
+                    }),
+                    document.getElementById('regist_survey_modal')
+                );
+                $('#regist_survey_modal').css('overflow-y','auto');
+                $('#regist_survey_modal').find('.modal-dialog').css('margin-top', '0');
+                $("#regist_survey_modal>.modal-dialog>.close_modal").remove();
+                $('#survey_border').removeClass('bg border');
+                $("#survey_border").css('padding', '0');
+                $("#survey_border>.border").css('width', '100%');
+                $($("#survey_name>.border")[0]).css('width', '55%');
+                $($("#survey_name>.border")[0]).css('margin-right', 'calc(5% - 4px)');
+                $($("#survey_name>.border")[1]).css('width', '40%');
+                $('#survey_first_name').tooltip({
+                    title: '<i class="fa fa-exclamation-circle"></i><span style="padding-left: 5px;">' + i18n_lang('name tool tip 1') + '</span><span style="padding-left: 0px;">' + i18n_lang('name tool tip 2') + '</span>',
+                    html: true,
+                    placement: 'top',
+                    trigger: 'hover',
+                    template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner" style="width: 330px;text-align: left;"></div></div>'
+                });
+                $('#survey_last_name').tooltip({
+                    title: '<i class="fa fa-exclamation-circle"></i><span style="padding-left: 5px;">' + i18n_lang('name tool tip 1') + '</span><span style="padding-left: 0px;">' + i18n_lang('name tool tip 2') + '</span>',
+                    html: true,
+                    placement: 'top',
+                    trigger: 'hover',
+                    template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner" style="width: 330px;text-align: left;"></div></div>'
+                });
+                $('#survey_mobilephone').tooltip({
+                    title: '<i class="fa fa-exclamation-circle"></i><span style="padding-left: 5px;">' + i18n_lang('phone tool tip 1') + '</span><span style="padding-left: 0px;">' + i18n_lang('phone tool tip 2') + '</span>',
+                    html: true,
+                    placement: 'top',
+                    trigger: 'hover',
+                    template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner" style="width: 220px;text-align: left;"></div></div>'
+                });
+            };
+
+            // handle double modal problem
+            $('#user_group_invite').on('show.bs.modal', function (e) {
+                $("#user_group_modal").css('z-index', 1040)
+            }).on('hidden.bs.modal', function (e) {
+                $('#user_group_modal').css('z-index', 1050)
+            });
+            $('#user_invite_detail').on('show.bs.modal', function (e) {
+                $('#user_group_modal').css('z-index', 1040)
+            }).on('hidden.bs.modal', function (e) {
+                $('#user_group_modal').css('z-index', 1050)
+            });
+            $('#login_email').change(function () {
+                $('#reset_email').val($(this).val());
+            });
+            $('#login_form').submit(function () {
+                if (!$('#login_form input[name="email"]').val() && !$('#login_form input[name="password"]').val()) {
+                    $("#login_form_error_msg ul li").text(i18n_lang('Please enter your email address and password.'))
+                    return false;
+                }
+                else if (!$('#login_form input[name="email"]').val()) {
+                    $("#login_form_error_msg ul li").text(i18n_lang('Please enter your email address.'))
+                    return false;
+                }
+                else if (!$('#login_form input[name="password"]').val()) {
+                    $("#login_form_error_msg ul li").text(i18n_lang('Please enter your password.'))
+                    return false;
+                }
+                else {
+                    $('#login_form_error_msg ul li').text('')
+                    return true;
+                }
+            });
+            var renderErrorList = function(msg, targetDOM, title) {
+                targetDOM.innerHTML = '';
+                if (!targetDOM || !msg) return
+                switch(msg.length){
+                    case 0:
+                        break;
+                    case 1:
+                        if (title === undefined || title === '') {
+                            var title = 'Error';
+                        }
+                    default:
+                        if (title === undefined || title === '') {
+                        var title = 'Errors';
+                        }
+                        var Factory = React.createFactory(MsgBox);
+                        ReactDOM.render(
+                        Factory({
+                            title: title,
+                            msg_type: 'error',
+                            content: msg.join('<br />'),
+                            i18n: i18n_lang
+                        }),
+                        targetDOM
+                        );
+                }
+            }
+            var validateChangePasswordForm = function() {
+                var msg;
+                var oldPwd = $('#change_password_form input[name="old_password"]').val();
+                var pwd = $('#change_password_form input[name="password"]').val();
+                var confirmPwd = $('#change_password_form input[name="confirm_password"]').val();
+                if (!oldPwd || !pwd || !confirmPwd) {
+                    msg = 'Password can not be empty.';
+                } else if (pwd !== confirmPwd) {
+                    msg = 'The new password and confirm password don\'t match.';
+                } else if (!msg) {
+                    msg = validatePassword(pwd);
+                }
+                if (msg) {
+                    renderErrorList(
+                        [i18n_lang(msg)],
+                        document.getElementById('change_password_error_list')
+                    )
+                    return false;
+                }
+                return true;
+            }
+            $('#change_password_modal')
+                .on('show.bs.modal', function (e) {
+                    // $('body').css('overflow-y','hidden');
+                    $('#change_password_modal').css('overflow-y','auto');
+                    // $('.for_blur').addClass('blur');
+                    var login_errors = [];
+                    var errors = [];
+                    errors = errors.concat(login_errors)
+                    if (typeof errors[0] === 'object') {
+                        var errorList = '<ul class="errorlist">';
+                        for(var k in errors[0]) {
+                            errorList += '<li>' + k + '<ul class="errorlist"><li>' + i18n_lang(errors[0][k]) + '</li></ul></li>';
+                        }
+                        errorList += '</ul>';
+                        errors[0] = errorList
+                    }
+                    renderErrorList(
+                        errors.map(function(x){return i18n_lang(x)}),
+                        document.getElementById('change_password_error_list')
+                    )
+                })
+                .on('hidden.bs.modal', function (e) {
+                    // $('body').css('overflow-y','auto');
+                    // $('.for_blur').removeClass('blur');
+                    $('#change_password_modal').css('overflow-y','hidden');
+                });
+            document.getElementById('email_for_pwd_changing').value = ''
+            $('#preview_logo').load(function () {
+                frame_ratio = 338 / 76;
+                pic_ratio = this.width / this.height;
+                if (this.height < 76 && this.width < 338) {
+                }
+                else if (pic_ratio > frame_ratio) {
+                    $(this).width('338px');
+                    $(this).height((338 / pic_ratio) + 'px');
+                }
+                else {
+                    $(this).height('76px');
+                    $(this).width((76 * pic_ratio) + 'px');
+                }
+                $('#desc_logo').hide();
+                $('#preview_logo').show();
+            });
+            function readURL(input) {
+                if (input.files && input.files[0]) {
+                    if (Math.ceil(input.files[0].size / 1024 / 1024) >= 2) {
+                        $('#inputFileToLoad').val("");
+                        alert(i18n_lang("The file size exceeds the limit of 2MB."));
+                    }
+                    else {
+                        $('#company_logo_name').val($('#inputFileToLoad').val().replace(/^.*[\\\/]/, ''))
+                        var reader = new FileReader();
+                        reader.onload = function (e) {
+                            $('#preview_logo').attr('src', e.target.result);
+                        };
+                        reader.readAsDataURL(input.files[0]);
+                    }
+                }
+            }
+            $(window).on("load", function () {
+                $('.afterload').removeClass('afterload');
+            });
+            $('#password').tooltip({
+                title: '<i class="fa fa-exclamation-circle"></i><span style="padding-left: 5px;">' + i18n_lang('password tool tip'),
+                html: true,
+                placement: 'top',
+                trigger: 'hover',
+                template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner" style="width: 330px;text-align: left; height: auto;"></div></div>'
+            });
+            $('#first_name').tooltip({
+                title: '<i class="fa fa-exclamation-circle"></i><span style="padding-left: 5px;">' + i18n_lang('name tool tip 1') + '</span><span style="padding-left: 0px;">' + i18n_lang('name tool tip 2') + '</span>',
+                html: true,
+                placement: 'top',
+                trigger: 'hover',
+                template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner" style="width: 330px;text-align: left;"></div></div>'
+            });
+            $('#last_name').tooltip({
+                title: '<i class="fa fa-exclamation-circle"></i><span style="padding-left: 5px;">' + i18n_lang('name tool tip 1') + '</span><span style="padding-left: 0px;">' + i18n_lang('name tool tip 2') + '</span>',
+                html: true,
+                placement: 'top',
+                trigger: 'hover',
+                template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner" style="width: 330px;text-align: left;"></div></div>'
+            });
+            // $('#mobilephone').tooltip({
+            //     title: '<i class="fa fa-exclamation-circle"></i><span style="padding-left: 5px;">' + i18n_lang('phone tool tip 1') + '</span><span style="padding-left: 0px;">' + i18n_lang('phone tool tip 2') + '</span>',
+            //     html: true,
+            //     placement: 'top',
+            //     trigger: 'hover',
+            //     template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner" style="width: 220px;text-align: left;"></div></div>'
+            // });
+            $('#username').val(new Date().getTime());
+
+            $('#first_name').keypress(function () {
+                $('.name.errorlist').html('');
+            });
+            $('#last_name').keypress(function () {
+                $('.name.errorlist').html('');
+            });
+            $('#email').keypress(function () {
+                $('.email.errorlist').html('');
+            });
+            $('#password').keypress(function () {
+                $('.pw1.errorlist').html('');
+            });
+            $('#tos').change(function () {
+                $('.tos.errorlist').html('');
+            });
+
+            function validateRegisterForm() {
+                $('.errorlist').html('');
+                $('#client_error').html('');
+                var msg = [];
+                var firstname = document.getElementById('first_name').value.trim();
+                var lastname = document.getElementById('last_name').value.trim();
+                
+                if (firstname == '') 
+                {
+                    msg.push('first name incorrect');
+                }
+                else if (firstname.length > 30)
+                {
+                    msg.push('first name too long');
+                }
+
+                if (lastname == '') {
+                    msg.push('last name incorrect');
+                }
+                else if (lastname.length > 30)
+                {
+                    msg.push('last name too long');
+                }
+
+                var pwdValidatingResult = validatePassword($('#password').val());
+                if (pwdValidatingResult !== 0) {
+                    msg.push(pwdValidatingResult);
+                }
+                if ($('#password').val() !== $('#password2').val()) {
+                    msg.push("The new password and confirm password don't match.");
+                }
+                if (!$('#email').val().match(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/)) {
+                    msg.push('email incorrect');
+                }
+                var hasRegisterCountry;
+                var registerCountryValue = document.getElementById('country_list').value;
+                for (var i = 0; i < COUNTRIES.length; i++) {
+                    if (COUNTRIES[i].ISO3 === registerCountryValue) {
+                        hasRegisterCountry = true;
+                        break;
+                    }
+                }
+                if (!hasRegisterCountry) msg.push('Please select your country.');
+                if ($('#tos:checked').length == 0) {
+                    msg.push('Please accept the Trend Micro Privacy Policy.');
+                }
+                if (msg.length > 0) {
+                    renderErrorList(
+                        msg.map(function(x){return i18n_lang(x)}),
+                        document.getElementById('register_error_list')
+                    )
+                    return false;
+                }
+                return true;
+            }
+
+            function init() {
+                $('.cus_height').height(1024);
+            }
+            init();
+
+            // UBT
+            // var read_all = false;
+            // var read_half = false;
+            // var last_scroll_top = 0;
+
+            // $.fn.scrollStopped = function(callback) {
+            //     var that = this, $this = $(that);
+            //     $this.scroll(function(ev) {
+            //         clearTimeout($this.data('scrollTimeout'));
+            //         $this.data('scrollTimeout', setTimeout(callback.bind(that), 100, ev));
+            //     });
+            // };
+
+            // $(window).scrollStopped(function(ev){
+            //     if ($(window).scrollTop() == 0 || $(window).scrollTop() + $(window).height() == $(document).height() || last_scroll_top > $(window).scrollTop()) {
+            //         $('#header').addClass('slideInDown');
+            //         $('#header').removeClass('slideOutUp');
+            //     }
+            //     else {
+            //         $('#header').addClass('slideOutUp');
+            //         $('#header').removeClass('slideInDown');
+            //     }
+            //     last_scroll_top = $(window).scrollTop();
+            // });
+            // $(window).scroll(function () {
+            //     if (!read_all && $(window).scrollTop() + $(window).height() == $(document).height()) {
+            //         UBT_event('Home page', 'reading', 'complete');
+            //         read_all = true;
+
+            //     }
+            //     if (!read_all && $(window).scrollTop() + $(window).height() > $(document).height() / 2) {
+            //         UBT_event('Home page', 'reading', 'half');
+            //         read_half = true;
+            //     }
+            // });
+            function finish_forget_password() {
+                $('#resetpw_sent_modal').modal('hide');
+                $('#login_modal').modal('show');
+            };
+
+            // currently, there is not same common js file for the old web page flow
+            // the code will be duplicated in several place
+            function disable_button_with_selector(selector) {
+                $(selector).attr("disabled", "disabled");
+                $(selector).prop('disable', true);
+                $(selector).addClass('disable_btn');
+            }
+
+            function enable_button_with_selector(selector) {
+                $(selector).removeAttr("disabled");
+                $(selector).prop('disable', false);
+                $(selector).removeClass('disable_btn');
+            }
+
+            function reset_pssword_request() {
+                disable_button_with_selector('#reset_passwd_btn');
+                $.ajax({
+                    type: 'POST',
+                    url: "/en/send_reset_password",
+                    data: $.param({
+                        email: $("#reset_email").val(),
+                        g: grecaptcha.getResponse(fpwd_captcha)
+                    }),
+                    success: function (data) {
+                        errmsg = "";
+                        enable_button_with_selector('#reset_passwd_btn');
+                        if (data == "1") {
+                            $('#resetpw_modal').modal('hide');
+                            $('#resetpw_sent_modal').modal('show');
+                        }
+                        else if (data == "-1") {
+                            errmsg = i18n_lang('No account found with that email address.');
+                        }
+                        else if (data == "-2") {
+                            errmsg = i18n_lang('only can reset password 5 times in 5 minutes.');
+                        }
+                        else if (data == "-3") {
+                            errmsg = i18n_lang('Please verify that you are a human.');
+                        }
+                        else {
+                            errmsg = i18n_lang('Failed to reset the password. Please try again.');
+                        }
+
+                        if (errmsg) {
+                            renderErrorList(
+                                [errmsg],
+                                document.getElementById('forget_password_error_list')
+                            )
+                        }
+
+                        grecaptcha.reset();
+                    }
+                    ,
+                    error: function () {
+                        enable_button_with_selector('#reset_passwd_btn');
+                        renderErrorList(
+                            [i18n_lang('Failed to reset the password. Please try again.')],
+                            document.getElementById('forget_password_error_list')
+                        )
+                    }
+                });
+            }
+            function getCookie(name) {
+                var cookieValue = null;
+                if (document.cookie && document.cookie != '') {
+                    var cookies = document.cookie.split(';');
+                    for (var i = 0; i < cookies.length; i++) {
+                        var cookie = $.trim(cookies[i]);
+                        // Does this cookie string begin with the name we want?
+                        if (cookie.substring(0, name.length + 1) == (name + '=')) {
+                            cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                            break;
+                        }
+                    }
+                }
+                return cookieValue;
+            }
+            var open_signin = false;
+            var open_signup = false;
+            var open_resetpw = false;
+
+            function resetPanel()
+            {
+                open_signin = false;
+                open_signup = false;
+                open_resetpw = false;
+                $('#register_modal').modal('hide');
+                $('#resetpw_modal').modal('hide');
+                $('#login_modal').modal('hide');
+                $('#check_mail_modal').modal('hide');
+            }
+            function SignIn() {
+                resetPanel()
+                //$('#signin').show();
+                open_signin = true;
+            }
+            function SignUp() {
+                resetPanel()
+                open_signup = true;
+            }
+            function resetpw() {
+                resetPanel()
+                open_resetpw = true;
+            }
+            function welcome_signin() {
+                resetPanel()
+                $('#welcomelogin').show();
+                $('#signin').hide();
+                open_signin = true;
+                $('#check_mail_modal').modal('hide');
+            }
+            $('#login_modal')
+                .on('show.bs.modal', function (e) {
+                    // $('.for_blur').addClass('blur');
+                    // $('#fish_rotation').removeClass('fish_rotation');
+                    updatePageHeaderAndAction('Log In | Phish Insight', 'Log in to your account and start the journey with us.', 'login');
+                    var errors = [];
+                    if (typeof errors[0] === 'object') {
+                        var errorList = '<ul class="errorlist">';
+                        for(var k in errors[0]) {
+                            errorList += '<li>' + k + '<ul class="errorlist"><li>' + i18n_lang(errors[0][k]) + '</li></ul></li>';
+                        }
+                        errorList += '</ul>';
+                        errors[0] = errorList
+                    }
+                    var Factory = React.createFactory(MsgBox);
+                    switch(errors.length){
+                        case 0:
+                            break;
+                        case 1:
+                            var title = 'Error';
+                        default:
+                            if (title == undefined)
+                                var title = 'Errors';
+                            errors = errors.map(function(x){return i18n_lang(x)});
+                            document.getElementById('login_error_list').innerHTML = "";
+                            ReactDOM.render(
+                                Factory({ title: title, msg_type: 'error', content: errors.join('<br />'), i18n: i18n_lang}),
+                                document.getElementById('login_error_list'));
+                    }
+                })
+                .on('hidden.bs.modal', function (e) {
+                    if (open_signup) {
+                        $('#register_modal').modal('show');
+                    }
+                    else if (open_resetpw) {
+                        $('#resetpw_modal').modal('show');
+                    }
+                    // else {
+                    //     $('.for_blur').removeClass('blur');
+                    // }
+                    open_signup = false;
+                    open_resetpw = false;
+                });
+            $('#register_modal')
+                .on('show.bs.modal', function (e) {
+                    updatePageHeaderAndAction('Sign Up | Phish Insight', 'Create a Phish Insight account now. Then you can create a phishing simulation campaign right away.', 'register');
+                    // $('body').css('overflow-y','hidden');
+                    // $('body').css('overflow-y','auto');
+                    $('#register_modal').css('overflow-y','auto');
+                    var errors = '';
+                    var errorTitle = '';
+                    errors = errors.trim().length > 0 ? errors.split(';') : [];
+                    // $('.for_blur').addClass('blur');
+                    // $('#fish_rotation').removeClass('fish_rotation');
+                    renderErrorList(
+                        errors.map(function(x){return i18n_lang(x)}),
+                        document.getElementById('register_error_list'),
+                        i18n_lang(errorTitle)
+                    )
+                })
+                .on('hidden.bs.modal', function (e) {
+                    // $('body').css('overflow-y','auto');
+                    $('#register_modal').css('overflow-y','hidden');
+                    if (open_signin) {
+                        $('#login_modal').modal();
+                    }
+                    // else {
+                    //     $('.for_blur').removeClass('blur');
+                    // }
+                    open_signin = false;
+                });
+            // $('#register_additional_info_modal')
+            //     .on('show.bs.modal', function (e) {
+            //         // $('.for_blur').addClass('blur');
+            //         // $('#fish_rotation').removeClass('fish_rotation');
+            //     })
+            //     .on('hidden.bs.modal', function (e) {
+            //         // $('.for_blur').removeClass('blur');
+            //     });
+            $('#regist_survey_modal')
+                .on('show.bs.modal', function (e) {
+                    updatePageHeaderAndAction('Leave your contact info | Phish Insight', 'Phish Insight is a SaaS based Phishing Simulation Service to enhance the security awareness of Enterprise employees against social engineering attacks.', 'contact');
+                })
+                .on('hidden.bs.modal', function (e) {
+                    // $('body').css('overflow-y','auto');
+                    $('#regist_survey_modal').css('overflow-y','hidden');
+                });
+            $('#check_mail_modal')
+                .on('show.bs.modal', function (e) {
+                    // $('.for_blur').addClass('blur');
+                    // $('#fish_rotation').removeClass('fish_rotation');
+                    updatePageHeaderAndAction('Check your inbox | Phish Insight', 'Phish Insight is a SaaS based Phishing Simulation Service to enhance the security awareness of Enterprise employees against social engineering attacks.', 'check_mail');
+                })
+                .on('hidden.bs.modal', function (e) {
+                    if (open_signin) {
+                        $('#login_modal').modal();
+                    }
+                    // else {
+                    //     $('.for_blur').removeClass('blur');
+                    // }
+                    open_signin = false;
+                });
+            $('#resetpw_modal')
+                .on('show.bs.modal', function (e) {
+                    // $('.for_blur').addClass('blur');
+                    // $('#fish_rotation').removeClass('fish_rotation');
+                    updatePageHeaderAndAction('Reset your password | Phish Insight', 'Phish Insight is a SaaS based Phishing Simulation Service to enhance the security awareness of Enterprise employees against social engineering attacks.', 'resetpw');
+                })
+                .on('hidden.bs.modal', function (e) {
+                    if (open_signin) {
+                        $('#login_modal').modal();
+                    }
+                    // else {
+                    //     $('.for_blur').removeClass('blur');
+                    // }
+                });
+
+            function Resend() {
+                $.get("/en/resend", function (data) {
+                    if (data == "True") {
+                        alert(i18n_lang('The account activation mail has been sent.'))
+                    }
+                    else {
+                        alert('Resend failed.\n' + data)
+                    }
+                });
+            }
+            $.fn.modal.Constructor.prototype.enforceFocus = $.noop;
+            if (location.hash == '#welcome') {
+                $('#welcomelogin').show();
+                $('#signin').hide();
+                $('#login_modal').modal('show');
+            } else if (location.hash == '#forgetpassowrd') {
+                $('#resetpw_modal').modal();
+            }
+
+            if ('') {
+                $('#change_password_modal').modal('hide');
+                $('#login_modal').modal();
+                alert('')
+            }
+
+            if ('') {
+                $('#change_password_modal').modal();
+            }
+
+            if ('0' == '1' && !'') {
+                $('#login_modal').modal();
+            }
+
+            if ('0' == '2') {
+                $('#register_modal').modal();
+            }
+
+            if ('0' == '4') {
+                $('#check_mail_modal').modal();
+            }
+            // document.getElementById('user_info_form').addEventListener('submit', function (e) {
+            //     var input_fields = document.querySelectorAll('#user_info_form>*>*>input');
+            //     var has_input_field = false;
+            //     for (var i = 0; i < input_fields.length; i++) {
+            //         if (input_fields[i].value != '') {
+            //             has_input_field = true;
+            //         }
+            //     }
+            //     if (!has_input_field) {
+            //         e.preventDefault();
+            //         alert(i18n_lang('Please fill the form before submit.'));
+            //     }
+            // });
+            // var tool_links = document.querySelectorAll('.tool_link');
+            // for (var i = 0; i < tool_links.length; i++) {
+            //     tool_links[i].addEventListener('click', function () {
+            //         UBT_event('free tools', 'click link', 'parallax');
+            //     });
+            // };
+            // var headers = document.querySelectorAll('.headers');
+            // for (var i = 0; i < headers.length; i++) {
+            //     headers[i].addEventListener('click', function () {
+            //         UBT_event('parallax header', 'click link');
+            //     });
+            // };
+        </script>
+        <script type="text/javascript">
+            var fpwd_captcha;
+            $.fn.modal.Constructor.prototype.enforceFocus = $.noop;
+            var onloadCallback = function() {
+                fpwd_captcha = grecaptcha.render('forgetpwd_recaptcha_container', {
+                    sitekey : '6LeE4hETAAAAANrpspTJwgDOSqIa_AYcg5xtwCBQ'
+                });
+                
+                ""
+            };
+        </script>        
+
+        <!-- <script type="text/javascript">
+            $(document).ready(function () {
+                document.getElementById('plans').style.display = 'block';
+            })
+        </script> -->
+        <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+        <script>
+            var action = getUrlParameter('action');
+            switch (action) {
+                case 'login':
+                    $('#login_modal').modal('show');
+                    break;
+                case 'register':
+                case 'contact':
+                    accept_user ? register_popup() : survey();
+                    break;
+                case 'resetpw':
+                    $('#resetpw_modal').modal('show');
+                    break;
+                case 'check_mail':
+                    $('#check_mail_modal').modal('show');
+                    break;
+            }
+            var SUPPORT_EMAIL = 'phishinsight@trendmicro.com';
+            document.getElementById('contactSupport').setAttribute("data-i18npara_support_email", SUPPORT_EMAIL);
+        </script>
+        <script src="/static/dist/landing.bundle.6da4bb6b5d2d.js"></script>
+    </body>
+
+
+
+<!-- Start of LiveChat (www.livechatinc.com) code -->
+<script type="text/javascript">
+  window.__lc = window.__lc || {};
+  window.__lc.license = 10033205;
+  window.__lc.visitor = {
+    name: ' ',
+    email: ''
+  };
+
+  (function () {
+    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+  })();
+</script>
+<noscript>
+  <a href="https://www.livechatinc.com/chat-with/10033205/">Chat with us</a>,
+  powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener" target="_blank">LiveChat</a>
+</noscript>
+<!-- End of LiveChat code -->
+
+
+
+<!-- Aptrinsic Tag-->
+  <script type="text/javascript">
+  (function(n,t,a,e){var i="aptrinsic";n[i]=n[i]||function(){
+      (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;
+    var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
+    var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
+  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-6AFVPZTSM2SY-2");
+
+  aptrinsic("identify", {
+    //User Fields
+    "id": "", // Required for logged in app users
+  } );
+</script>
+<!-- End Aptrinsic Tag-->
+
+
+</html>

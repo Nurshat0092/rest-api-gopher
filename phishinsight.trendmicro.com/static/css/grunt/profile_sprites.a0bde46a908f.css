@@ -1,0 +1,114 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-ID_icon {
+  background-image: url("../../img/grunt/profile_spritesheet.7f272f7452cf.png");
+  background-position: -210px -205px;
+  width: 30px;
+  height: 30px;
+}
+.icon-KEY_icon {
+  background-image: url("../../img/grunt/profile_spritesheet.7f272f7452cf.png");
+  background-position: -258px -90px;
+  width: 30px;
+  height: 28px;
+}
+.icon-arrow_right {
+  background-image: url("../../img/grunt/profile_spritesheet.7f272f7452cf.png");
+  background-position: -258px -172px;
+  width: 14px;
+  height: 14px;
+}
+.icon-close {
+  background-image: url("../../img/grunt/profile_spritesheet.7f272f7452cf.png");
+  background-position: -258px -146px;
+  width: 26px;
+  height: 26px;
+}
+.icon-company_logo_icon {
+  background-image: url("../../img/grunt/profile_spritesheet.7f272f7452cf.png");
+  background-position: -150px -205px;
+  width: 30px;
+  height: 30px;
+}
+.icon-company_name_icon {
+  background-image: url("../../img/grunt/profile_spritesheet.7f272f7452cf.png");
+  background-position: -30px -205px;
+  width: 30px;
+  height: 30px;
+}
+.icon-confirm_password {
+  background-image: url("../../img/grunt/profile_spritesheet.7f272f7452cf.png");
+  background-position: -60px -205px;
+  width: 30px;
+  height: 30px;
+}
+.icon-country_icon {
+  background-image: url("../../img/grunt/profile_spritesheet.7f272f7452cf.png");
+  background-position: -90px -205px;
+  width: 30px;
+  height: 30px;
+}
+.icon-departmenticon {
+  background-image: url("../../img/grunt/profile_spritesheet.7f272f7452cf.png");
+  background-position: -120px -205px;
+  width: 30px;
+  height: 30px;
+}
+.icon-earth_icon {
+  background-image: url("../../img/grunt/profile_spritesheet.7f272f7452cf.png");
+  background-position: -258px -60px;
+  width: 30px;
+  height: 30px;
+}
+.icon-fish {
+  background-image: url("../../img/grunt/profile_spritesheet.7f272f7452cf.png");
+  background-position: 0px 0px;
+  width: 258px;
+  height: 205px;
+}
+.icon-industry_icon {
+  background-image: url("../../img/grunt/profile_spritesheet.7f272f7452cf.png");
+  background-position: -258px 0px;
+  width: 30px;
+  height: 30px;
+}
+.icon-mail {
+  background-image: url("../../img/grunt/profile_spritesheet.7f272f7452cf.png");
+  background-position: -258px -30px;
+  width: 30px;
+  height: 30px;
+}
+.icon-mobile_icon {
+  background-image: url("../../img/grunt/profile_spritesheet.7f272f7452cf.png");
+  background-position: 0px -205px;
+  width: 30px;
+  height: 30px;
+}
+.icon-number_of_employees_icon {
+  background-image: url("../../img/grunt/profile_spritesheet.7f272f7452cf.png");
+  background-position: -180px -205px;
+  width: 30px;
+  height: 30px;
+}
+.icon-shared_message {
+  background-image: url("../../img/grunt/profile_spritesheet.7f272f7452cf.png");
+  background-position: -258px -118px;
+  width: 28px;
+  height: 28px;
+}

@@ -1,0 +1,6 @@
+Sitemap: https://phishinsight.trendmicro.com/sitemap.xml
+User-agent: *
+Disallow: /privacy_policy
+Disallow: /resend
+Disallow: /education
+Disallow: /education/*

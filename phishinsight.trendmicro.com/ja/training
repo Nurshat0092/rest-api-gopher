@@ -1,0 +1,502 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <style>
+    /* For fix navbar */
+    /* body { padding-top: 60px; } */
+  </style>
+  <script>
+    if (!window.ezphReactObjs) {
+      window.ezphReactObjs = {}
+    }
+  </script>
+  
+
+<meta property="og:title" content="Training | Phish Insight" />
+<meta name="description" content="Phish Insight offers a fast & flexible security awareness training that fits your organization." />
+<meta property="og:description" content="Phish Insight offers a fast & flexible security awareness training that fits your organization." />
+
+
+<link rel="alternate" href="https://phishinsight.trendmicro.com/en/training" hreflang="en" />
+<link rel="alternate" href="https://phishinsight.trendmicro.com/ja/training" hreflang="ja" />
+<link rel="alternate" href="https://phishinsight.trendmicro.com/zh-tw/training" hreflang="zh" />
+<link rel="alternate" href="https://phishinsight.trendmicro.com/training" hreflang="x-default" />
+
+<meta property="og:locale" content="ja" />
+<meta property="og:type" content="object" />
+<meta property="og:url" content="https://phishinsight.trendmicro.com/ja/training" />
+<meta property="og:image" content="https://phishinsight.trendmicro.com/static/img/landing/sharing_image.jpg" />
+<meta property="og:site_name" content="PhishInsight" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="theme-color" content="#ce3c20">
+
+
+<script src="/static/scripts/3rdParty/pace.min.24d2d5e3e331.js"></script>
+<link href="/static/css/pace-theme-minimal.6305071ead46.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kosugi&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    padding-top: 0;
+  }
+</style>
+
+<script src="/static/scripts/3rdParty/jquery-3.3.1.min.a09e13ee94d5.js"></script>
+
+<link rel="stylesheet" href="/static/bootstrap-3.3.5/css/bootstrap.min.3f6b2b044f28.css">
+<script src="/static/bootstrap-3.3.5/js/bootstrap.min.4becdc910462.js"></script>
+
+<link rel="stylesheet" href="/static/dist/promotion.7c9e2d105ed9.css">
+
+<link rel="stylesheet" href="/static/bootstrap-3.3.5/css/bootstrap-slider.min.924fca9b575b.css">
+<script src="/static/bootstrap-3.3.5/js/bootstrap-slider.min.04033d5bd042.js"></script>
+
+  <title>Training | Phish Insight</title>
+  <link rel="icon" href="/static/favicon.8ad89f6e5c0d.ico">
+  
+<script>
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({'userID': ''});
+</script>
+<script src="/static/scripts/Common/load_ubt.92c46cbdc188.js"></script>
+</head>
+
+
+<body class="no-horizontal-scroll dark-background">
+  
+
+  
+
+
+<nav id="landing-nav" class="landing-nav navbar navbar-default navbar-static-top">
+  <div class="container">
+    <a class="navbar-brand" href="/ja/" aria-label="PhishInsight">
+      <img class="img-responsive" alt="PhishInsight" src="/static/img/promotion/black_logo.35b55487a5d4.png">
+    </a>
+    <span id="landing-menu-toggle" class="mobileMenu mobile navbar-right">&#9776;</span>
+    <ul class="nav navbar-nav links desktop">
+      <li id="landing-nav-page-home">
+        <a href="/ja/" aria-label="ホーム"><span>ホーム</span></a>
+      </li>
+      <li id="landing-nav-page-simulation">
+        <a href="/ja/simulator" aria-label="シミュレーション"
+          onclick="UBT_event('Simulator', 'Enter','From navigation');"><span>シミュレーション</span></a>
+      </li>
+      <li id="landing-nav-page-training">
+        <a href="/ja/training" aria-label="トレーニング"
+          onclick="UBT_event('Training', 'Enter','From navigation');">
+          <span>トレーニング</span>
+        </a>
+      </li>
+      <li id="landing-nav-page-pricing">
+        <a href="/ja/pricing" aria-label="利用プラン"
+          onclick="UBT_event('Pricing', 'Enter','From navigation');">
+          <span>利用プラン</span>
+        </a>
+      </li>
+    </ul>
+    <a href="/ja/accounts/?action=register" aria-label="サインアップ"
+      onclick="UBT_event('Sign Up', 'Enter' ,'From navigation');">
+      <button id="sign_up_nav" type="button" class="btn btn-default navbar-btn signUp desktop navbar-right">
+        サインアップ
+      </button>
+    </a>
+    <a href="/ja/accounts/?action=login" aria-label="ログイン"
+      onclick="UBT_event('Log In', 'Enter','From navigation');">
+      <button id="log_in_nav" type="button" class="btn btn-default navbar-btn login desktop navbar-right">
+        ログイン
+      </button>
+    </a>
+  </div>
+</nav>
+<div id="landing-mobile-layer-greyOut" class="greyOut mobile"></div>
+<div id="landing-mobile-layer" class="landing-nav overlay mobile">
+  <a class="overlay-brand" href="#" aria-label="PhishInsight">
+    <img class="img-responsive" alt="PhishInsight" src="/static/img/landing/text-logo.2f673d587ae2.png">
+  </a>
+  <a id="landing-menu-close" aria-label="close" href="javascript:void(0)" class="closebtn">&times;</a>
+  <div class="overlay-content">
+    <hr>
+    <ul class="nav navbar-nav links">
+      <li id="landing-nav-mobile-page-home">
+        <a href="/ja/" aria-label="ホーム"><span>ホーム</span></a>
+      </li>
+      <li id="landing-nav-mobile-page-simulation">
+        <a href="/ja/simulator" aria-label="シミュレーション"
+          onclick="UBT_event('Simulator', 'Enter','From navigation');"><span>シミュレーション</span></a>
+      </li>
+      <li id="landing-nav-mobile-page-training">
+        <a href="/ja/training" aria-label="トレーニング"
+          onclick="UBT_event('Training', 'Enter','From navigation');"><span>トレーニング</span></a>
+      </li>
+      <li id="landing-nav-mobile-page-pricing">
+        <a href="/ja/pricing" aria-label="利用プラン"
+          onclick="UBT_event('Pricing', 'Enter','From navigation');">
+          <span>利用プラン</span>
+        </a>
+      </li>
+    </ul>
+    <hr />
+    <ul class="nav navbar-nav links">
+      <li>
+        <a id="log_in_nav" href="/ja/accounts/?action=login"
+          onclick="UBT_event('Log In', 'Enter','From navigation');">
+          ログイン
+        </a>
+      </li>
+    </ul>
+    <div class="buttonContainer">
+      <a href="/ja/accounts/?action=register" onclick="UBT_event('Sign Up', 'Enter' ,'From navigation');">
+        <button id="sign_up_nav" type="button" class="btn btn-default navbar-btn signUp navbar-right">
+          サインアップ
+        </button>
+      </a>
+    </div>
+    <hr />
+    <ul class="nav navbar-nav links languages">
+      <li id="landing-mobile-lang-en">
+        <a id="landing-mobile-lang-en-link" href="/en/">English</a>
+      </li>
+      <li id="landing-mobile-lang-zhtw">
+        <a id="landing-mobile-lang-zhtw-link" href="/zh-tw/">中文</a>
+      </li>
+      <li id="landing-mobile-lang-ja">
+        <a id="landing-mobile-lang-ja-link" href="/ja/">日本語</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  
+<script>
+  function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
+<link rel="stylesheet" href="/static/font-awesome/css/font-awesome.min.feda974a77ea.css" />
+
+<div class="container">
+  <div class="row promotion-banner-container">
+    <div class="col-sm-12 col-md-6">
+      <h1 class="promotion-banner-title">
+        Fast & Flexible <br/> Security Awareness Training that Fits Your Organization
+      </h1>
+      <div class="promotion-banner-content">
+        Use it when you like, how you like with no contracts or subscription.
+      </div>
+      <div class="promotion-banner-btn-container">
+        
+        
+        <a id="banner-joinBetaButton" href="/ja/accounts/?action=register&amp;hint=please sign up first"
+          class="promotion-banner-button-margin btn promotion-green-button">
+          Get Started
+        </a>
+        
+        
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-0 col-md-6">
+      <img class="img-responsive lazy" data-src="/static/img/promotion/pie-promotion-banner.d2f71b08148c.png"
+        alt="Phish Insight security awareness training is fast and flexible.">
+    </div>
+  </div>
+  <hr class="mobile">
+  <div class="promotion-sec-1-container">
+    <!-- Modal -->
+    <div class="modal fade" id="trainingVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-lg autoHeight" role="document">
+        <div class="modal-content autoHeight">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body autoHeight">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="promotion-training-video embed-responsive-item"
+                src="https://www.youtube.com/embed/xv1Fh1WF1iQ?autoplay=0&enablejsapi=1&version=3&playerapiid=ytplayer"
+                allow="encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="promotion-sec-1-title">
+      <h2 class="promotion-section-title">
+        Set up your training campaign in minutes
+      </h2>
+      <div class="promotion-section-content">
+        No contracts. No distracting add-ons. Just the best training at your fingertips.
+      </div>
+    </div>
+    <div class="promotion-video-container">
+      <img class="promotion-video-img main img-responsive lazy"
+        data-src="/static/img/promotion/pie-promotion-course.550bee6d0ec3.png" alt="Course">
+      <img id="video-showModalButton" data-toggle="modal" data-target="#trainingVideo"
+        class="promotion-video-img play-btn lazy" data-src="/static/img/promotion/pie-promotion-play-btn.b3cf231053ff.png"
+        alt="Course">
+    </div>
+    <div class="row promotion-intro-container">
+      <div class="promotion-intro col-xs-12 col-md-4">
+        <img class="img-responsive lazy" data-src="/static/img/promotion/pie-promotion-training-icon.99b2dec76322.png"
+          alt="Amazing training content">
+        <div class="promotion-intro-border">
+          <h3 class="promotion-intro-title">Amazing training content
+          </h3>
+          <div class="promotion-section-sub-content">
+            We are collaborating with market-leading training providers like AwareGO, GoldPhish, InfoSec, NINJIO and NextTech Security to bring you the best content.
+          </div>
+        </div>
+      </div>
+      <div class="promotion-intro col-xs-12 col-md-4">
+        <img class="img-responsive lazy" data-src="/static/img/promotion/pie-promotion-test-icon.af206cae9512.png"
+          alt="Quizzes for enhanced learning">
+        <div class="promotion-intro-border">
+          <h3 class="promotion-intro-title">Quizzes for enhanced learning</h3>
+          <div class="promotion-section-sub-content">
+            We help you measure the effectiveness of training using short tests at the end of many of our training modules.
+          </div>
+        </div>
+      </div>
+      <div class="promotion-intro last col-xs-12 col-md-4">
+        <img class="img-responsive lazy" data-src="/static/img/promotion/pie-promotion-result-icon.fa65f7f871a6.png"
+          alt="Simple and clear reporting">
+        <h3 class="promotion-intro-title">Simple and clear reporting</h3>
+        <div class="promotion-section-sub-content">
+          View metrics that track attendance and quiz scores in easy-to-consume dashboards or download the data in one click to import into your own BI tool.
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="row promotion-sec-2-container">
+    <div class="promotion-sec-2-quote promotion-bubble-container col-md-5">
+      <img class="promotion-speech-bubble desktop img-responsive lazy"
+        data-src="/static/img/promotion/speech-bubble-1.7e8a35c36d73.png" alt="Bubble">
+      <img class="promotion-speech-bubble mobile img-responsive lazy"
+        data-src="/static/img/promotion/speech-bubble-2.25c92378932a.png" alt="Bubble">
+      <h2 class="promotion-speech-bubble-text desktop">Why training matters?
+      </h2>
+      <h2 class="promotion-speech-bubble-text mobile">Why training <br/> matters?
+      </h2>
+    </div>
+    <div class="promotion-sec-2-quote col-md-7">
+      <div class="promotion-quote">
+        <p>
+          It just takes one employee and one click to cause serious financial and reputational damage to your organization.<br/>Making sure your employees are aware of the threat posed by a cyber-security breach is no longer a nice-to-have. It is a must-have.
+        </p>
+      </div>
+    </div>
+    <div class="promotion-section-base col-sm-12"></div>
+    <div
+      class="promotion-sec-2-value promotion-course-image-container col-xs-12 col-sm-offset-3 col-sm-6 col-md-push-6 col-md-offset-1 col-md-5">
+      <img class="img-responsive lazy" data-src="/static/img/promotion/pie-promotion-pain.2cf8d29bf49c.png"
+        alt="Phish Insight provides entertaining and interactive learning experiences in all kinds of security awareness topics.">
+    </div>
+    <div class="promotion-sec-2-value col-sm-12 col-md-pull-6 col-md-6">
+      <div class="promotion-section-title">
+        We know your pain!
+      </div>
+      <div class="promotion-section-sub-content promotion-painPoint">We understand how difficult it is to get employees excited about training, we also know that getting content that is a good fit for your organization can be really challenging. </div>
+      <div class="promotion-section-sub-content promotion-painPoint">When you sign up, you can choose training content in several different styles; from entertaining animations to interactive learning experiences, and from very short microlearning experiences to longer, more in-depth education.</div>
+      <div class="promotion-btn-container">
+        
+        
+        <a id="valueSection-joinBetaButton" href="/ja/accounts/?action=register&amp;hint=please sign up first"
+          class="promotion-banner-button-margin btn promotion-green-button">
+          Get Started
+        </a>
+        
+        
+      </div>
+    </div>
+  </div>
+  <!-- <div class="row promotion-sec-3-container">
+    <img class="background" src="/static/img/promotion/pie-promotion-concern-bg.541c8d131d5f.png" alt="background">
+    <div class="promotion-sec-3-explanation promotion-speech-bubble-container col-md-4">
+      <div class="promotion-speech-bubble-text">
+        Why is all of </br>this free?
+      </div>
+    </div>
+    <div class="promotion-sec-3-explanation col-md-8">
+      <div class="promotion-explanation-box col-md-12">
+        <div class="desc">We will start charging for training content in March 2021 but until then we need to gather as much feedback on your experience as possible, this will help us build an experience that you will love.</div>
+        <div class="title">If it's free I must be the product! What are you doing with my data?</div>
+        <div class="desc">Your data stays with Trend Micro and it is not sold to any third parties. We do some limited email communication about product usage and feature updates to the admin user that signs up to the product but we do not market to any other employees in your organization.</div>
+      </div>
+    </div>
+  </div> -->
+  <div class="row promotion-sec-4-container">
+    <div class="promotion-user-image col-md-4">
+      <img class="lazy" data-src="/static/img/promotion/pie-promotion-computer.6d718c12121a.png"
+        alt="Customer testimonial">
+    </div>
+    <div class="promotion-user-feedback col-md-8">
+      <div class="promotion-feedback-title col-md-12">
+        Join the thousands of customers
+      </div>
+      <div class="promotion-feedback-content col-md-12">
+        <div>"Thank you for this amazing piece of software, we had recently been hit with scams so training and awareness is essential."</div><br/>- Sebastian, India, Non-profit
+      </div>
+    </div>
+  </div>
+</div>
+<div class="promotion-sec-5-container">
+  <div class="promotion-section-title center">
+    Start training your employees now
+  </div>
+  <div class="promotion-btn-container">
+    
+    
+    <a id="lastSection-joinBetaButton" href="/ja/accounts/?action=register&amp;hint=please sign up first"
+      class="promotion-banner-button-margin btn promotion-green-button">
+      Get Started
+    </a>
+    <div id="landing-sec5-top" onclick="scrollToTop()" class="col-xs-12 backToTop">
+      ↑ Back to Top
+    </div>
+    
+    
+  </div>
+</div>
+
+
+  
+
+
+
+<div class="landing-footer">
+  <div class="container">
+    <div class="col-xs-12 col-sm-4 section">
+      <div class="col-xs-12 landing-footer-section-title">Phish Insight</div>
+      <div id="landing-footer-page-home" class="col-xs-5 landing-footer-section-content">
+        <a href="/ja/" aria-label="ホーム">ホーム</a>
+      </div>
+      <div id="landing-footer-page-pricing" class="col-xs-7 landing-footer-section-content">
+        <a href="/ja/pricing"
+          aria-label="利用プラン">利用プラン</a>
+      </div>
+      <div id="landing-footer-page-simulation" class="col-xs-5 landing-footer-section-content">
+        <a href="/ja/simulator"
+          aria-label="シミュレーター">シミュレーター</a>
+      </div>
+      <div id="landing-footer-page-data-security" class="col-xs-7 landing-footer-section-content">
+        <a href="/ja/dataSecurity"
+          aria-label="データセキュリティ">データセキュリティ</a>
+      </div>
+      <div id="landing-footer-page-training" class="col-xs-12 landing-footer-section-content">
+        <a href="/ja/training"
+          aria-label="トレーニング">トレーニング</a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 section">
+      <div class="col-xs-12 landing-footer-section-title">トレンドマイクロ</div>
+      <div id="landing-footer-page-about" class="col-xs-12 landing-footer-section-content">
+        <a href="https://www.trendmicro.com/ja_jp/about.html" aria-label="会社概要" target="_blank"
+          rel="noopener">会社概要</a>
+      </div>
+      <div id="landing-footer-page-safetyCenter" class="col-xs-12 landing-footer-section-content">
+        <a href="https://global.sitesafety.trendmicro.com/?cc=jp" aria-label="Site Safety Center"
+          target="_blank" rel="noopener">Site Safety Center</a>
+      </div>
+      <div id="landing-footer-page-solutions" class="col-xs-12 landing-footer-section-content">
+        <a href="https://www.trendmicro.com/ja_jp/business/products/user-protection/sps/email-and-collaboration/hosted-email-security.html " aria-label="電子メールセキュリティソリューション"
+          target="_blank" rel="noopener">電子メールセキュリティソリューション</a>
+      </div>
+
+    </div>
+    <div class="col-xs-12 col-sm-2 landing-footer-language">
+      <div class="landing-footer-section-title">
+        Language
+      </div>
+      <div id="landing-lang-en" class="col-xs-12 landing-footer-section-content">
+        <a id="landing-lang-en-link" aria-label="English"
+          href="/en/">English</a>
+      </div>
+      <div id="landing-lang-zh-tw" class="col-xs-12 landing-footer-section-content">
+        <a id="landing-lang-zhtw-link" aria-label="中文"
+          href="/zh-tw/">中文</a>
+      </div>
+      <div id="landing-lang-ja" class="col-xs-12 landing-footer-section-content">
+        <a id="landing-lang-ja-link" aria-label="日本語"
+          href="/ja/">日本語</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 landing-footer-copyright">
+    Copyright © 2021 Trend Micro Incorporated. All rights reserved.
+  </div>
+</div>
+  
+
+
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+  <script src="/static/scripts/3rdParty/lazyload.min.b856c701a110.js"></script>
+  <script src="/static/scripts/3rdParty/scrollreveal.min.126cb7c43291.js"></script>
+  <script src="/static/dist/promotion.bundle.008ec53a854f.js"></script>
+  <script>
+    window.onscroll = function () {
+      myFunction()
+    };
+
+    var header = document.getElementById("landing-nav");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+
+
+
+<!-- Start of LiveChat (www.livechatinc.com) code -->
+<script type="text/javascript">
+  window.__lc = window.__lc || {};
+  window.__lc.license = 10033205;
+  window.__lc.visitor = {
+    name: ' ',
+    email: ''
+  };
+
+  (function () {
+    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+  })();
+</script>
+<noscript>
+  <a href="https://www.livechatinc.com/chat-with/10033205/">Chat with us</a>,
+  powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener" target="_blank">LiveChat</a>
+</noscript>
+<!-- End of LiveChat code -->
+
+
+
+<!-- Aptrinsic Tag-->
+  <script type="text/javascript">
+  (function(n,t,a,e){var i="aptrinsic";n[i]=n[i]||function(){
+      (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;
+    var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
+    var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
+  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-6AFVPZTSM2SY-2");
+
+  aptrinsic("identify", {
+    //User Fields
+    "id": "", // Required for logged in app users
+  } );
+</script>
+<!-- End Aptrinsic Tag-->
+
+
+</html>

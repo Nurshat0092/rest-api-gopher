@@ -1,0 +1,502 @@
+
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+  <style>
+    /* For fix navbar */
+    /* body { padding-top: 60px; } */
+  </style>
+  <script>
+    if (!window.ezphReactObjs) {
+      window.ezphReactObjs = {}
+    }
+  </script>
+  
+
+<meta property="og:title" content="資安教育訓練 | Phish Insight" />
+<meta name="description" content="Phish Insight 提供快速、彈性且符合您組織需求的資安意識訓練。" />
+<meta property="og:description" content="Phish Insight 提供快速、彈性且符合您組織需求的資安意識訓練。" />
+
+
+<link rel="alternate" href="https://phishinsight.trendmicro.com/en/training" hreflang="en" />
+<link rel="alternate" href="https://phishinsight.trendmicro.com/ja/training" hreflang="ja" />
+<link rel="alternate" href="https://phishinsight.trendmicro.com/zh-tw/training" hreflang="zh" />
+<link rel="alternate" href="https://phishinsight.trendmicro.com/training" hreflang="x-default" />
+
+<meta property="og:locale" content="zh-tw" />
+<meta property="og:type" content="object" />
+<meta property="og:url" content="https://phishinsight.trendmicro.com/zh-tw/training" />
+<meta property="og:image" content="https://phishinsight.trendmicro.com/static/img/landing/sharing_image.jpg" />
+<meta property="og:site_name" content="PhishInsight" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="theme-color" content="#ce3c20">
+
+
+<script src="/static/scripts/3rdParty/pace.min.24d2d5e3e331.js"></script>
+<link href="/static/css/pace-theme-minimal.6305071ead46.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kosugi&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    padding-top: 0;
+  }
+</style>
+
+<script src="/static/scripts/3rdParty/jquery-3.3.1.min.a09e13ee94d5.js"></script>
+
+<link rel="stylesheet" href="/static/bootstrap-3.3.5/css/bootstrap.min.3f6b2b044f28.css">
+<script src="/static/bootstrap-3.3.5/js/bootstrap.min.4becdc910462.js"></script>
+
+<link rel="stylesheet" href="/static/dist/promotion.7c9e2d105ed9.css">
+
+<link rel="stylesheet" href="/static/bootstrap-3.3.5/css/bootstrap-slider.min.924fca9b575b.css">
+<script src="/static/bootstrap-3.3.5/js/bootstrap-slider.min.04033d5bd042.js"></script>
+
+  <title>資安教育訓練 | Phish Insight</title>
+  <link rel="icon" href="/static/favicon.8ad89f6e5c0d.ico">
+  
+<script>
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({'userID': ''});
+</script>
+<script src="/static/scripts/Common/load_ubt.92c46cbdc188.js"></script>
+</head>
+
+
+<body class="no-horizontal-scroll dark-background">
+  
+
+  
+
+
+<nav id="landing-nav" class="landing-nav navbar navbar-default navbar-static-top">
+  <div class="container">
+    <a class="navbar-brand" href="/zh-tw/" aria-label="PhishInsight">
+      <img class="img-responsive" alt="PhishInsight" src="/static/img/promotion/black_logo.35b55487a5d4.png">
+    </a>
+    <span id="landing-menu-toggle" class="mobileMenu mobile navbar-right">&#9776;</span>
+    <ul class="nav navbar-nav links desktop">
+      <li id="landing-nav-page-home">
+        <a href="/zh-tw/" aria-label="首頁"><span>首頁</span></a>
+      </li>
+      <li id="landing-nav-page-simulation">
+        <a href="/zh-tw/simulator" aria-label="模擬演練"
+          onclick="UBT_event('Simulator', 'Enter','From navigation');"><span>模擬演練</span></a>
+      </li>
+      <li id="landing-nav-page-training">
+        <a href="/zh-tw/training" aria-label="教育訓練"
+          onclick="UBT_event('Training', 'Enter','From navigation');">
+          <span>教育訓練</span>
+        </a>
+      </li>
+      <li id="landing-nav-page-pricing">
+        <a href="/zh-tw/pricing" aria-label="服務方案"
+          onclick="UBT_event('Pricing', 'Enter','From navigation');">
+          <span>服務方案</span>
+        </a>
+      </li>
+    </ul>
+    <a href="/zh-tw/accounts/?action=register" aria-label="註冊"
+      onclick="UBT_event('Sign Up', 'Enter' ,'From navigation');">
+      <button id="sign_up_nav" type="button" class="btn btn-default navbar-btn signUp desktop navbar-right">
+        註冊
+      </button>
+    </a>
+    <a href="/zh-tw/accounts/?action=login" aria-label="登入"
+      onclick="UBT_event('Log In', 'Enter','From navigation');">
+      <button id="log_in_nav" type="button" class="btn btn-default navbar-btn login desktop navbar-right">
+        登入
+      </button>
+    </a>
+  </div>
+</nav>
+<div id="landing-mobile-layer-greyOut" class="greyOut mobile"></div>
+<div id="landing-mobile-layer" class="landing-nav overlay mobile">
+  <a class="overlay-brand" href="#" aria-label="PhishInsight">
+    <img class="img-responsive" alt="PhishInsight" src="/static/img/landing/text-logo.2f673d587ae2.png">
+  </a>
+  <a id="landing-menu-close" aria-label="close" href="javascript:void(0)" class="closebtn">&times;</a>
+  <div class="overlay-content">
+    <hr>
+    <ul class="nav navbar-nav links">
+      <li id="landing-nav-mobile-page-home">
+        <a href="/zh-tw/" aria-label="首頁"><span>首頁</span></a>
+      </li>
+      <li id="landing-nav-mobile-page-simulation">
+        <a href="/zh-tw/simulator" aria-label="模擬演練"
+          onclick="UBT_event('Simulator', 'Enter','From navigation');"><span>模擬演練</span></a>
+      </li>
+      <li id="landing-nav-mobile-page-training">
+        <a href="/zh-tw/training" aria-label="教育訓練"
+          onclick="UBT_event('Training', 'Enter','From navigation');"><span>教育訓練</span></a>
+      </li>
+      <li id="landing-nav-mobile-page-pricing">
+        <a href="/zh-tw/pricing" aria-label="服務方案"
+          onclick="UBT_event('Pricing', 'Enter','From navigation');">
+          <span>服務方案</span>
+        </a>
+      </li>
+    </ul>
+    <hr />
+    <ul class="nav navbar-nav links">
+      <li>
+        <a id="log_in_nav" href="/zh-tw/accounts/?action=login"
+          onclick="UBT_event('Log In', 'Enter','From navigation');">
+          登入
+        </a>
+      </li>
+    </ul>
+    <div class="buttonContainer">
+      <a href="/zh-tw/accounts/?action=register" onclick="UBT_event('Sign Up', 'Enter' ,'From navigation');">
+        <button id="sign_up_nav" type="button" class="btn btn-default navbar-btn signUp navbar-right">
+          註冊
+        </button>
+      </a>
+    </div>
+    <hr />
+    <ul class="nav navbar-nav links languages">
+      <li id="landing-mobile-lang-en">
+        <a id="landing-mobile-lang-en-link" href="/en/">English</a>
+      </li>
+      <li id="landing-mobile-lang-zhtw">
+        <a id="landing-mobile-lang-zhtw-link" href="/zh-tw/">中文</a>
+      </li>
+      <li id="landing-mobile-lang-ja">
+        <a id="landing-mobile-lang-ja-link" href="/ja/">日本語</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  
+<script>
+  function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
+<link rel="stylesheet" href="/static/font-awesome/css/font-awesome.min.feda974a77ea.css" />
+
+<div class="container">
+  <div class="row promotion-banner-container">
+    <div class="col-sm-12 col-md-6">
+      <h1 class="promotion-banner-title">
+        快速 & 彈性<br/>的資安意識訓練<br/>符合您組織的需求
+      </h1>
+      <div class="promotion-banner-content">
+        想用就用，不需任何合約或訂閱的情況下，您馬上就能開始使用此工具！
+      </div>
+      <div class="promotion-banner-btn-container">
+        
+        
+        <a id="banner-joinBetaButton" href="/zh-tw/accounts/?action=register&amp;hint=please sign up first"
+          class="promotion-banner-button-margin btn promotion-green-button">
+          開始使用
+        </a>
+        
+        
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-offset-3 col-sm-6 col-md-offset-0 col-md-6">
+      <img class="img-responsive lazy" data-src="/static/img/promotion/pie-promotion-banner.d2f71b08148c.png"
+        alt="快速且彈性的 Phish Insight 資安意識訓練。">
+    </div>
+  </div>
+  <hr class="mobile">
+  <div class="promotion-sec-1-container">
+    <!-- Modal -->
+    <div class="modal fade" id="trainingVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-lg autoHeight" role="document">
+        <div class="modal-content autoHeight">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body autoHeight">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="promotion-training-video embed-responsive-item"
+                src="https://www.youtube.com/embed/xv1Fh1WF1iQ?autoplay=0&enablejsapi=1&version=3&playerapiid=ytplayer"
+                allow="encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="promotion-sec-1-title">
+      <h2 class="promotion-section-title">
+        快速建立您的教育訓練任務
+      </h2>
+      <div class="promotion-section-content">
+        沒有合約，沒有額外的附加程式。隨時使用最好的課程。
+      </div>
+    </div>
+    <div class="promotion-video-container">
+      <img class="promotion-video-img main img-responsive lazy"
+        data-src="/static/img/promotion/pie-promotion-course.550bee6d0ec3.png" alt="Course">
+      <img id="video-showModalButton" data-toggle="modal" data-target="#trainingVideo"
+        class="promotion-video-img play-btn lazy" data-src="/static/img/promotion/pie-promotion-play-btn.b3cf231053ff.png"
+        alt="Course">
+    </div>
+    <div class="row promotion-intro-container">
+      <div class="promotion-intro col-xs-12 col-md-4">
+        <img class="img-responsive lazy" data-src="/static/img/promotion/pie-promotion-training-icon.99b2dec76322.png"
+          alt="最佳的教育訓練課程">
+        <div class="promotion-intro-border">
+          <h3 class="promotion-intro-title">最佳的教育訓練課程
+          </h3>
+          <div class="promotion-section-sub-content">
+            我們與領先業界的教育訓練內容提供商合作，像是  AwareGO、GoldPhish、InfoSec、NINJIO 和 NextTech Security 等，只為您提供最佳內容。
+          </div>
+        </div>
+      </div>
+      <div class="promotion-intro col-xs-12 col-md-4">
+        <img class="img-responsive lazy" data-src="/static/img/promotion/pie-promotion-test-icon.af206cae9512.png"
+          alt="加強學習的考試測驗">
+        <div class="promotion-intro-border">
+          <h3 class="promotion-intro-title">加強學習的考試測驗</h3>
+          <div class="promotion-section-sub-content">
+            在訓練課程結束時，透過簡短測驗來衡量訓練的有效性。
+          </div>
+        </div>
+      </div>
+      <div class="promotion-intro last col-xs-12 col-md-4">
+        <img class="img-responsive lazy" data-src="/static/img/promotion/pie-promotion-result-icon.fa65f7f871a6.png"
+          alt="簡單明瞭的分析報告">
+        <h3 class="promotion-intro-title">簡單明瞭的分析報告</h3>
+        <div class="promotion-section-sub-content">
+          在報表中，可追蹤上課率和測驗分數等各種指標，或者直接下載資料，以匯入到您自己的BI工具中。
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="row promotion-sec-2-container">
+    <div class="promotion-sec-2-quote promotion-bubble-container col-md-5">
+      <img class="promotion-speech-bubble desktop img-responsive lazy"
+        data-src="/static/img/promotion/speech-bubble-1.7e8a35c36d73.png" alt="Bubble">
+      <img class="promotion-speech-bubble mobile img-responsive lazy"
+        data-src="/static/img/promotion/speech-bubble-2.25c92378932a.png" alt="Bubble">
+      <h2 class="promotion-speech-bubble-text desktop">為什麼教育訓練很重要？
+      </h2>
+      <h2 class="promotion-speech-bubble-text mobile">為什麼<br/>教育訓練很重要？
+      </h2>
+    </div>
+    <div class="promotion-sec-2-quote col-md-7">
+      <div class="promotion-quote">
+        <p>
+          只需一名員工和一次點擊即可對您的組織造成嚴重的財務和聲譽損害。<br/>必須要確保您的員工意識到網路安全漏洞帶來的威脅。
+        </p>
+      </div>
+    </div>
+    <div class="promotion-section-base col-sm-12"></div>
+    <div
+      class="promotion-sec-2-value promotion-course-image-container col-xs-12 col-sm-offset-3 col-sm-6 col-md-push-6 col-md-offset-1 col-md-5">
+      <img class="img-responsive lazy" data-src="/static/img/promotion/pie-promotion-pain.2cf8d29bf49c.png"
+        alt="Phish Insight 提供各種資安意識主題的娛樂和互動學習體驗。">
+    </div>
+    <div class="promotion-sec-2-value col-sm-12 col-md-pull-6 col-md-6">
+      <div class="promotion-section-title">
+        我們了解您的難處！
+      </div>
+      <div class="promotion-section-sub-content promotion-painPoint">我們理解讓員工對訓練感到興奮是多麼困難，我們也知道要獲取適合您組織的課程，非常具有挑戰性。</div>
+      <div class="promotion-section-sub-content promotion-painPoint">註冊時，您可以選擇多種不同風格的訓練內容；從娛樂性的動畫到互動學習體驗，從非常短的微學習經歷到更長、更深入的教育。</div>
+      <div class="promotion-btn-container">
+        
+        
+        <a id="valueSection-joinBetaButton" href="/zh-tw/accounts/?action=register&amp;hint=please sign up first"
+          class="promotion-banner-button-margin btn promotion-green-button">
+          開始使用
+        </a>
+        
+        
+      </div>
+    </div>
+  </div>
+  <!-- <div class="row promotion-sec-3-container">
+    <img class="background" src="/static/img/promotion/pie-promotion-concern-bg.541c8d131d5f.png" alt="background">
+    <div class="promotion-sec-3-explanation promotion-speech-bubble-container col-md-4">
+      <div class="promotion-speech-bubble-text">
+        為什麼免費？
+      </div>
+    </div>
+    <div class="promotion-sec-3-explanation col-md-8">
+      <div class="promotion-explanation-box col-md-12">
+        <div class="desc">我們要到 2021 年 3 月才會開始收費。在此之前，我們必須針對您的體驗收集意見回饋，數量愈多愈好，以打造您也喜歡的優質體驗。</div>
+        <div class="title">免費的話，我的資料會不會被你們不當利用？你們會怎麼處理我的資料？</div>
+        <div class="desc">您的資料會由趨勢科技妥善保存，不會銷售給任何第三方。我們僅會向註冊產品的管理員使用者傳送少量電子郵件，目的在於告知產品使用方法和功能更新項目，不會向貴公司的任何其他員工傳送行銷內容。</div>
+      </div>
+    </div>
+  </div> -->
+  <div class="row promotion-sec-4-container">
+    <div class="promotion-user-image col-md-4">
+      <img class="lazy" data-src="/static/img/promotion/pie-promotion-computer.6d718c12121a.png"
+        alt="客戶推薦">
+    </div>
+    <div class="promotion-user-feedback col-md-8">
+      <div class="promotion-feedback-title col-md-12">
+        加入成千上萬的客戶
+      </div>
+      <div class="promotion-feedback-content col-md-12">
+        <div>感謝您提供這麼好的軟體，我們最近遭遇了詐騙，因此資安訓練和意識至關重要。</div><br/>- Sebastian，印度，非營利組織
+      </div>
+    </div>
+  </div>
+</div>
+<div class="promotion-sec-5-container">
+  <div class="promotion-section-title center">
+    立即開始訓練您的員工
+  </div>
+  <div class="promotion-btn-container">
+    
+    
+    <a id="lastSection-joinBetaButton" href="/zh-tw/accounts/?action=register&amp;hint=please sign up first"
+      class="promotion-banner-button-margin btn promotion-green-button">
+      開始使用
+    </a>
+    <div id="landing-sec5-top" onclick="scrollToTop()" class="col-xs-12 backToTop">
+      ↑ Back to Top
+    </div>
+    
+    
+  </div>
+</div>
+
+
+  
+
+
+
+<div class="landing-footer">
+  <div class="container">
+    <div class="col-xs-12 col-sm-4 section">
+      <div class="col-xs-12 landing-footer-section-title">Phish Insight</div>
+      <div id="landing-footer-page-home" class="col-xs-5 landing-footer-section-content">
+        <a href="/zh-tw/" aria-label="首頁">首頁</a>
+      </div>
+      <div id="landing-footer-page-pricing" class="col-xs-7 landing-footer-section-content">
+        <a href="/zh-tw/pricing"
+          aria-label="服務方案">服務方案</a>
+      </div>
+      <div id="landing-footer-page-simulation" class="col-xs-5 landing-footer-section-content">
+        <a href="/zh-tw/simulator"
+          aria-label="模擬演練">模擬演練</a>
+      </div>
+      <div id="landing-footer-page-data-security" class="col-xs-7 landing-footer-section-content">
+        <a href="/zh-tw/dataSecurity"
+          aria-label="資料安全">資料安全</a>
+      </div>
+      <div id="landing-footer-page-training" class="col-xs-12 landing-footer-section-content">
+        <a href="/zh-tw/training"
+          aria-label="教育訓練">教育訓練</a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 section">
+      <div class="col-xs-12 landing-footer-section-title">趨勢科技</div>
+      <div id="landing-footer-page-about" class="col-xs-12 landing-footer-section-content">
+        <a href="https://www.trendmicro.com/zh_tw/about.html" aria-label="關於我們" target="_blank"
+          rel="noopener">關於我們</a>
+      </div>
+      <div id="landing-footer-page-safetyCenter" class="col-xs-12 landing-footer-section-content">
+        <a href="https://global.sitesafety.trendmicro.com/?cc=en" aria-label="Site Safety Center"
+          target="_blank" rel="noopener">Site Safety Center</a>
+      </div>
+      <div id="landing-footer-page-solutions" class="col-xs-12 landing-footer-section-content">
+        <a href="https://www.trendmicro.com/zh_tw/business/products/user-protection/sps/email-and-collaboration/cloud-email-gateway-services.html" aria-label="郵件安全解決方案"
+          target="_blank" rel="noopener">郵件安全解決方案</a>
+      </div>
+
+    </div>
+    <div class="col-xs-12 col-sm-2 landing-footer-language">
+      <div class="landing-footer-section-title">
+        語言
+      </div>
+      <div id="landing-lang-en" class="col-xs-12 landing-footer-section-content">
+        <a id="landing-lang-en-link" aria-label="English"
+          href="/en/">English</a>
+      </div>
+      <div id="landing-lang-zh-tw" class="col-xs-12 landing-footer-section-content">
+        <a id="landing-lang-zhtw-link" aria-label="中文"
+          href="/zh-tw/">中文</a>
+      </div>
+      <div id="landing-lang-ja" class="col-xs-12 landing-footer-section-content">
+        <a id="landing-lang-ja-link" aria-label="日本語"
+          href="/ja/">日本語</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 landing-footer-copyright">
+    Copyright © 2021 Trend Micro Incorporated. All rights reserved.
+  </div>
+</div>
+  
+
+
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+  <script src="/static/scripts/3rdParty/lazyload.min.b856c701a110.js"></script>
+  <script src="/static/scripts/3rdParty/scrollreveal.min.126cb7c43291.js"></script>
+  <script src="/static/dist/promotion.bundle.008ec53a854f.js"></script>
+  <script>
+    window.onscroll = function () {
+      myFunction()
+    };
+
+    var header = document.getElementById("landing-nav");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+
+
+
+<!-- Start of LiveChat (www.livechatinc.com) code -->
+<script type="text/javascript">
+  window.__lc = window.__lc || {};
+  window.__lc.license = 10033205;
+  window.__lc.visitor = {
+    name: ' ',
+    email: ''
+  };
+
+  (function () {
+    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+  })();
+</script>
+<noscript>
+  <a href="https://www.livechatinc.com/chat-with/10033205/">Chat with us</a>,
+  powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener" target="_blank">LiveChat</a>
+</noscript>
+<!-- End of LiveChat code -->
+
+
+
+<!-- Aptrinsic Tag-->
+  <script type="text/javascript">
+  (function(n,t,a,e){var i="aptrinsic";n[i]=n[i]||function(){
+      (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;
+    var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
+    var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
+  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-6AFVPZTSM2SY-2");
+
+  aptrinsic("identify", {
+    //User Fields
+    "id": "", // Required for logged in app users
+  } );
+</script>
+<!-- End Aptrinsic Tag-->
+
+
+</html>

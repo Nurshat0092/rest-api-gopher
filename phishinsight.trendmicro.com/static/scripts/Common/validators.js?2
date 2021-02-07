@@ -1,0 +1,41 @@
+const validatePassword = function (pwd) {
+  // /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\S{8,50}$/
+  if (!pwd) {
+    return 'Password can not be empty.';
+  }
+  if (pwd.length < 8 || pwd.length > 50) {
+    return 'The password must be at least 8 characters.';
+  }
+  if (pwd.match(/[^\S]/)) {
+    return 'Your password contains invalid characters.';
+  }
+  if (!pwd.match(/\d/)) {
+    return 'Your password must contain at least 1 digits.';
+  }
+  const hasLowerCaseLetter = pwd.match(/[a-z]/);
+  const hasUpperCaseLetter = pwd.match(/[A-Z]/);
+  if (!hasLowerCaseLetter && !hasUpperCaseLetter) {
+    return 'Your password must contain at least 1 uppercase letter and 1 lowercase letter.';
+  }
+  if (!hasLowerCaseLetter) {
+    return 'Your password must contain at least 1 lowercase letter.';
+  }
+  if (!hasUpperCaseLetter) {
+    return 'Your password must contain at least 1 uppercase letter.';
+  }
+  return 0;
+};
+
+const __entityMap = {
+  '&': '&amp;',
+  '<': '&lt;',
+  '>': '&gt;',
+  '"': '&quot;',
+  "'": '&#39;',
+  '/': '&#x2F;',
+};
+
+const escapeHTML = function (txt) {
+  return String(txt).replace(/[&<>"'\/]/g, s => __entityMap[s]);
+};
+

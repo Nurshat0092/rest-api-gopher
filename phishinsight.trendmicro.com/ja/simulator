@@ -1,0 +1,784 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <style>
+    /* For fix navbar */
+    /* body { padding-top: 60px; } */
+  </style>
+  <script>
+    if (!window.ezphReactObjs) {
+      window.ezphReactObjs = {}
+    }
+  </script>
+  
+
+<meta name="description" content="私たちはテストが簡単に設定されスケジュールされることで時間が短縮できると確信しています｡直感的なメニューとステップバイステップのガイドがトレーニングの時間を節約し､専門外の人でもシステムを使えるようにしています｡" />
+<meta property="og:title" content="模擬訓練 | Phish Insight" />
+<meta property="og:description" content="私たちはテストが簡単に設定されスケジュールされることで時間が短縮できると確信しています｡直感的なメニューとステップバイステップのガイドがトレーニングの時間を節約し､専門外の人でもシステムを使えるようにしています｡" />
+
+
+<link rel="alternate" href="https://phishinsight.trendmicro.com/en/simulator" hreflang="en" />
+<link rel="alternate" href="https://phishinsight.trendmicro.com/ja/simulator" hreflang="ja" />
+<link rel="alternate" href="https://phishinsight.trendmicro.com/zh-tw/simulator" hreflang="zh" />
+<link rel="alternate" href="https://phishinsight.trendmicro.com/simulator" hreflang="x-default" />
+
+<meta property="og:locale" content="ja" />
+<meta property="og:type" content="object" />
+<meta property="og:url" content="https://phishinsight.trendmicro.com/ja/simulator" />
+<meta property="og:image" content="https://phishinsight.trendmicro.com/static/img/landing/sharing_image.jpg" />
+<meta property="og:site_name" content="PhishInsight" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="theme-color" content="#ce3c20">
+
+
+<script src="/static/scripts/3rdParty/pace.min.24d2d5e3e331.js"></script>
+<link href="/static/css/pace-theme-minimal.6305071ead46.css" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Kosugi&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/bootstrap-3.3.5/css/bootstrap.min.3f6b2b044f28.css">
+<link rel="stylesheet" href="/static/dist/landing.f083cd0f4e62.css">
+<style>
+  body {
+    padding-top: 0;
+  }
+</style>
+
+  <title>模擬訓練 | Phish Insight</title>
+  <link rel="icon" href="/static/favicon.8ad89f6e5c0d.ico">
+  
+<script>
+    window.dataLayer = window.dataLayer || [];
+    dataLayer.push({'userID': ''});
+</script>
+<script src="/static/scripts/Common/load_ubt.92c46cbdc188.js"></script>
+</head>
+
+
+<body class="no-horizontal-scroll">
+  
+
+  
+
+
+<nav id="landing-nav" class="landing-nav navbar navbar-default navbar-static-top">
+  <div class="container">
+    <a class="navbar-brand" href="/ja/" aria-label="PhishInsight">
+      <img class="img-responsive" alt="PhishInsight" src="/static/img/promotion/black_logo.35b55487a5d4.png">
+    </a>
+    <span id="landing-menu-toggle" class="mobileMenu mobile navbar-right">&#9776;</span>
+    <ul class="nav navbar-nav links desktop">
+      <li id="landing-nav-page-home">
+        <a href="/ja/" aria-label="ホーム"><span>ホーム</span></a>
+      </li>
+      <li id="landing-nav-page-simulation">
+        <a href="/ja/simulator" aria-label="シミュレーション"
+          onclick="UBT_event('Simulator', 'Enter','From navigation');"><span>シミュレーション</span></a>
+      </li>
+      <li id="landing-nav-page-training">
+        <a href="/ja/training" aria-label="トレーニング"
+          onclick="UBT_event('Training', 'Enter','From navigation');">
+          <span>トレーニング</span>
+        </a>
+      </li>
+      <li id="landing-nav-page-pricing">
+        <a href="/ja/pricing" aria-label="利用プラン"
+          onclick="UBT_event('Pricing', 'Enter','From navigation');">
+          <span>利用プラン</span>
+        </a>
+      </li>
+    </ul>
+    <a href="/ja/accounts/?action=register" aria-label="サインアップ"
+      onclick="UBT_event('Sign Up', 'Enter' ,'From navigation');">
+      <button id="sign_up_nav" type="button" class="btn btn-default navbar-btn signUp desktop navbar-right">
+        サインアップ
+      </button>
+    </a>
+    <a href="/ja/accounts/?action=login" aria-label="ログイン"
+      onclick="UBT_event('Log In', 'Enter','From navigation');">
+      <button id="log_in_nav" type="button" class="btn btn-default navbar-btn login desktop navbar-right">
+        ログイン
+      </button>
+    </a>
+  </div>
+</nav>
+<div id="landing-mobile-layer-greyOut" class="greyOut mobile"></div>
+<div id="landing-mobile-layer" class="landing-nav overlay mobile">
+  <a class="overlay-brand" href="#" aria-label="PhishInsight">
+    <img class="img-responsive" alt="PhishInsight" src="/static/img/landing/text-logo.2f673d587ae2.png">
+  </a>
+  <a id="landing-menu-close" aria-label="close" href="javascript:void(0)" class="closebtn">&times;</a>
+  <div class="overlay-content">
+    <hr>
+    <ul class="nav navbar-nav links">
+      <li id="landing-nav-mobile-page-home">
+        <a href="/ja/" aria-label="ホーム"><span>ホーム</span></a>
+      </li>
+      <li id="landing-nav-mobile-page-simulation">
+        <a href="/ja/simulator" aria-label="シミュレーション"
+          onclick="UBT_event('Simulator', 'Enter','From navigation');"><span>シミュレーション</span></a>
+      </li>
+      <li id="landing-nav-mobile-page-training">
+        <a href="/ja/training" aria-label="トレーニング"
+          onclick="UBT_event('Training', 'Enter','From navigation');"><span>トレーニング</span></a>
+      </li>
+      <li id="landing-nav-mobile-page-pricing">
+        <a href="/ja/pricing" aria-label="利用プラン"
+          onclick="UBT_event('Pricing', 'Enter','From navigation');">
+          <span>利用プラン</span>
+        </a>
+      </li>
+    </ul>
+    <hr />
+    <ul class="nav navbar-nav links">
+      <li id="landing-nav-mobile-page-login">
+        <a id="log_in_nav" href="/ja/accounts/?action=login" aria-label="ログイン"
+          onclick="UBT_event('Log In', 'Enter','From navigation');">
+          <span> ログイン </span>
+        </a>
+      </li>
+    </ul>
+    <div class="buttonContainer">
+      <a href="/ja/accounts/?action=register" aria-label="サインアップ"
+        onclick="UBT_event('Sign Up', 'Enter' ,'From navigation');">
+        <button id="sign_up_nav" type="button" class="btn btn-default navbar-btn signUp navbar-right">
+          サインアップ
+        </button>
+      </a>
+    </div>
+    <hr />
+    <ul class="nav navbar-nav links languages">
+      <li id="landing-mobile-lang-en">
+        <a id="landing-mobile-lang-en-link" href="/en/"
+          aria-label="English">English</a>
+      </li>
+      <li id="landing-mobile-lang-zhtw">
+        <a id="landing-mobile-lang-zhtw-link" href="/zh-tw/"
+          aria-label="中文">中文</a>
+      </li>
+      <li id="landing-mobile-lang-ja">
+        <a id="landing-mobile-lang-ja-link" href="/ja/"
+          aria-label="日本語">日本語</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  
+<script>
+  function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+
+  function addClassName(elem, name) {
+    var names = elem.className.split(" ");
+    if (names.indexOf(name) == -1) {
+      elem.className += " " + name;
+    }
+  }
+
+  function removeClassName(elem, name) {
+    var reg = new RegExp('\\b' + name + '\\b', 'g');
+    elem.className = elem.className.replace(reg, "");
+  }
+
+  function quizReveal(elemId) {
+    if (window.sr && window.sr.isSupported()) {
+      var elem = document.getElementById(elemId);
+      window.sr.reveal(elem, {
+        reset: true,
+      });
+    }
+  }
+
+  function quizAnswerPhishing() {
+    var question = document.getElementById('landing-simulator-quiz-info-question');
+    addClassName(question, 'landing-quiz-hide');
+
+    var answerPhishing = document.getElementById('landing-simulator-quiz-info-phishing');
+    removeClassName(answerPhishing, 'landing-quiz-hide');
+
+    var answerBack = document.getElementById('landing-simulator-quiz-answer-back');
+    removeClassName(answerBack, 'landing-quiz-hide');
+
+    quizReveal('landing-simulator-quiz-info-phishing');
+  }
+
+  function quizAnswerLegitimate() {
+    var question = document.getElementById('landing-simulator-quiz-info-question');
+    addClassName(question, 'landing-quiz-hide');
+
+    var answerLegitimate = document.getElementById('landing-simulator-quiz-info-legitimate');
+    removeClassName(answerLegitimate, 'landing-quiz-hide');
+
+    var answerBack = document.getElementById('landing-simulator-quiz-answer-back');
+    removeClassName(answerBack, 'landing-quiz-hide');
+
+    quizReveal('landing-simulator-quiz-info-legitimate');
+  }
+
+  function quizAnswerBack() {
+    var answerPhishing = document.getElementById('landing-simulator-quiz-info-phishing');
+    addClassName(answerPhishing, 'landing-quiz-hide');
+    var answerLegitimate = document.getElementById('landing-simulator-quiz-info-legitimate');
+    addClassName(answerLegitimate, 'landing-quiz-hide');
+    var answerBack = document.getElementById('landing-simulator-quiz-answer-back');
+    addClassName(answerBack, 'landing-quiz-hide');
+    var question = document.getElementById('landing-simulator-quiz-info-question');
+    removeClassName(question, 'landing-quiz-hide');
+  }
+
+  function showSaasVideoModal() {
+    var modal = document.getElementById('landing-saas-video-modal');
+    removeClassName(modal, 'landing-simulator-hide');
+    removeClassName(modal, 'fade-out');
+    addClassName(modal, 'fade-in');
+    addClassName(document.body, 'landing-simulator-modal-show');
+  }
+
+  function hideSaasVideoModal() {
+    var modal = document.getElementById('landing-saas-video-modal');
+    removeClassName(modal, 'fade-in');
+    addClassName(modal, 'fade-out');
+    removeClassName(document.body, 'landing-simulator-modal-show');
+
+    // pause video
+    var video = document.getElementById('landing-youtube-video');
+    video.contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+  }
+</script>
+<!-- start main -->
+<div class="container">
+  <div class="row landing-simulator-main landing-reveal">
+    <div class="landing-simulator-main-intro col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <h1 class="landing-simulator-main-title">
+        フィッシング模擬訓練はPhish Insightで簡単に実施できます｡
+      </h1>
+      <div class="landing-simulator-main-subtitle">
+        <div>私たちはテストが簡単に設定されスケジュールされることで時間が短縮できると確信しています｡</div><div>直感的なメニューとステップバイステップのガイドがトレーニングの時間を節約し､専門外の人でもシステムを使えるようにしています｡</div>
+      </div>
+      <div class="landing-simulator-main-action">
+        <a class="landing-green-button landing-simulation-btn" id="simulation_main_sign_up"
+          href="/ja/accounts/?action=register"
+          onclick="UBT_event('Sign Up', 'Enter','From simulation main');">開始する</a>
+      </div>
+    </div>
+    <div class="landing-simulator-main-visual col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      <img class="lazy" data-src="/static/img/landing/simulation_main_visual.72c01d4c5fde.png"
+        alt="Phish Insight 模擬訓練は使いやすい｡" />
+    </div>
+  </div>
+</div>
+<!-- end main -->
+<!-- start steps -->
+<div class="container">
+  <div class="row landing-simulator-steps">
+    <div class="container">
+      <div class="row landing-reveal">
+        <h2 class="landing-simulator-steps-title">
+          フィッシング模擬訓練を行う上であなたが必要なものは､
+        </h2>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row landing-reveal">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+          <div class="landing-simulator-steps-visual-background">
+            <img class="lazy" data-src="/static/img/landing/simulation_steps_bg.3d74db824e85.png" />
+          </div>
+        </div>
+        <div class="col-lg-7 col-md-7 col-sm-11 col-xs-12 col-md-offset-0 col-sm-offset-1">
+          <div class="landing-simulator-steps-visual-block col-lg-2 col-md-2 col-sm-2 col-xs-5">
+            <div class="landing-simulator-steps-visual-block-content">
+              <div>
+                <div>
+                  <div>
+                    <img src="/static/img/landing/simulation_steps_budget.14260476727a.png"
+                      alt="フィッシング模擬訓練のにお金をかける必要はありません｡" />
+                  </div>
+                  <span class="text">0 円の予算</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="landing-simulator-steps-visual-block col-lg-1 col-md-1 col-sm-1 col-xs-2">
+            <div class="landing-simulator-steps-plus-block">
+              <img class="lazy" data-src="/static/img/landing/simulation_steps_plus.62e608e7ce4b.png"
+                alt="simulation steps plus image" />
+            </div>
+          </div>
+          <div class="landing-simulator-steps-visual-block col-lg-2 col-md-2 col-sm-2 col-xs-5">
+            <div class="landing-simulator-steps-visual-block-content">
+              <div>
+                <div>
+                  <div>
+                    <img class="lazy" data-src="/static/img/landing/simulation_steps_admin.0fe0e91468ee.png"
+                      alt="フィッシング模擬訓練キャンペーンを作成することは1人の人を取るだけである｡" />
+                  </div>
+                  <span class="text">1 人の管理者</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="landing-simulator-steps-visual-block mobile-hide col-lg-1 col-md-1 col-sm-1 col-xs-1">
+            <div class="landing-simulator-steps-plus-block">
+              <img class="lazy" data-src="/static/img/landing/simulation_steps_plus.62e608e7ce4b.png"
+                alt="simulation steps plus image" />
+            </div>
+          </div>
+          <div class="landing-simulator-steps-visual-block col-lg-2 col-md-2 col-sm-2 col-xs-5">
+            <div class="landing-simulator-steps-visual-block-content">
+              <div>
+                <div>
+                  <div>
+                    <img class="lazy" data-src="/static/img/landing/simulation_steps_step.ac539df6b195.png"
+                      alt="フィッシング模擬訓練キャンペーンを作成することは4つの処置を取るだけである｡" />
+                  </div>
+                  <span class="text">4 つの手順</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="landing-simulator-steps-visual-block col-lg-1 col-md-1 col-sm-1 col-xs-2">
+            <div class="landing-simulator-steps-plus-block">
+              <img class="lazy" data-src="/static/img/landing/simulation_steps_plus.62e608e7ce4b.png"
+                alt="simulation steps plus image" />
+            </div>
+          </div>
+          <div class="landing-simulator-steps-visual-block col-lg-2 col-md-2 col-sm-2 col-xs-5">
+            <div class="landing-simulator-steps-visual-block-content">
+              <div>
+                <div>
+                  <div>
+                    <img class="lazy" data-src="/static/img/landing/simulation_steps_time.48b50121d109.png"
+                      alt="フィッシングシ模擬訓練キャンペーンを作成するのには5分かかるだけである｡" />
+                  </div>
+                  <span class="text">5 分の時間</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+          <div class="landing-simulator-steps-visual-desc">
+            簡単で､速い！
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="landing-simulator-divider"></div>
+    </div>
+  </div>
+</div>
+<!-- end steps -->
+<!-- start saas -->
+<div class="container">
+  <div class="row landing-simulator-saas landing-reveal">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="landing-simulator-saas-title">
+        ソフトウェアのインストールは必要ありません｡
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="landing-simulator-saas-subtitle">
+        <div>Phish InsightはSaaS型のフィッシングアウェアネスツールです｡</div>
+        <div>Phish Insightでは特別なソフトウェアは必要ありません｡標準的なウェブブラウザからアクセスできます｡</div>
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+      <div class="landing-simulator-saas-video-thumbnail-bg">
+        <img class="lazy" data-src="/static/img/landing/polygon_5.e81e26d265f2.png"
+          alt="thumbnail background for how to use phishinsight video" />
+      </div>
+      <div class="landing-simulator-saas-video-thumbnail">
+        <img class="lazy" data-src="/static/img/landing/simulation_saas_video.565338a9b051.png"
+          alt="thumbnail for how to use phishinsight video" />
+        <img id="landing-simulator-saas-video-play" class="landing-simulator-saas-video-play lazy"
+          data-src="/static/img/landing/play_btn.b3cf231053ff.png" alt="simulation SAAS video play button"
+          onclick="showSaasVideoModal()" />
+      </div>
+    </div>
+  </div>
+  <div class="landing-simulator-saas-divider"></div>
+</div>
+<!-- end saas -->
+<!-- start detail -->
+<div class="container">
+  <div class="row landing-simulator-detail">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 landing-reveal">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 landing-simulation-detail-main-mobile">
+          <div class="desktop-hide">
+            <div class="home-simulator-detail-title-background">
+              <img class="lazy" data-src="/static/img/landing/dark_polygon_5.07e35b89914f.png"
+                alt="simulation detail title background" />
+            </div>
+            <div class="home-simulator-detail-title">
+              何がフィッシング模擬訓練の中にあるか？
+            </div>
+          </div>
+          <div class="landing-simulator-detail-visual">
+            <img class="lazy" data-src="/static/img/landing/simulation_detail_mail.8188c0c1a397.png"
+              alt="Phish Insight によってフィッ模擬訓練をすることは容易で､柔軟である｡" />
+          </div>
+          <div class="landing-simulator-detail-action desktop-hide">
+            <a class="landing-btn landing-simulation-btn" id="simulation_detail_sign_up_1"
+              href="/ja/accounts/?action=register"
+              onclick="UBT_event('Sign Up', 'Enter','From simulation detail');">開始する</a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 tablet-hide mobile-hide">
+          <div class="home-simulator-detail-title">
+            <div class="home-simulator-detail-title-background">
+              <img class="lazy" data-src="/static/img/landing/dark_polygon_5.07e35b89914f.png"
+                alt="simulation detail title background" />
+            </div>
+            何がフィッシング模擬訓練の中にあるか？
+          </div>
+          <div class="landing-simulator-detail-action tablet-hide mobile-hide">
+            <a class="landing-btn landing-simulation-btn" id="simulation_detail_sign_up_2"
+              href="/ja/accounts/?action=register"
+              onclick="UBT_event('Sign Up', 'Enter','From simulation detail');">開始する</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 landing-reveal">
+      <div class="landing-simulator-detail-item">
+        <div class="landing-simulator-detail-item-icon">
+          <img class="lazy" data-src="/static/img/landing/simulation_detail_template.a5fa5f7e86c5.png"
+            alt="フィッシングメールテンプレートライブラリ" />
+        </div>
+        <div class="landing-simulator-detail-item-info">
+          <div class="landing-simulator-detail-item-title">
+            フィッシングメールテンプレートライブラリ
+          </div>
+          <div class="landing-simulator-detail-item-desc">
+            テストの作成から難しさを取り除きました｡デザイン済みのテンプレートを使い､数分で実行できます｡すべてのテンプレートは必要に応じてカスタマイズできます｡テンプレートには､Amazonクーポンや､Facebookのログインアラート､LinkedInのつながりリクエスト通知､もしくは社内の報奨プログラムなどのような個人のメールやビジネスアカウントのメールがあります｡そして､ご心配ありません｡テンプレートは実際の攻撃を模倣してデザインされているだけで､危険はありません｡
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 landing-reveal">
+      <div class="landing-simulator-detail-item">
+        <div class="landing-simulator-detail-item-icon">
+          <img class="lazy" data-src="/static/img/landing/simulation_detail_dashboard.7a2b8e787514.png"
+            alt="リアルタイム ダッシュボード" />
+        </div>
+        <div class="landing-simulator-detail-item-info info-divider">
+          <div class="landing-simulator-detail-item-title">
+            リアルタイム ダッシュボード
+          </div>
+          <div class="landing-simulator-detail-item-desc">
+            誰がメールからクリックしたのか､どのOSを使っているのか､ブラウザとそのバージョンなどを正確に知ることができます｡レポートでは添付ファイルを開封したかどうかや､重要な情報をランディングページ上で入力したかどうかも追跡しています｡レポートデータはCSVファイルにダウンロード可能で､個々のユーザ単位で提供可能です｡Phish Insightは社員の傾向や進歩をビジュアル化されたダッシュボードとレポートとともに簡単に測定､実証します｡
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 landing-reveal">
+      <div class="landing-simulator-detail-item">
+        <div class="landing-simulator-detail-item-icon">
+          <img class="lazy" data-src="/static/img/landing/simulation_detail_customize.bc28a95f656f.png"
+            alt="すべてのテンプレートをカスタマイズ可能です｡" />
+        </div>
+        <div class="landing-simulator-detail-item-info">
+          <div class="landing-simulator-detail-item-title">
+            すべてのテンプレートをカスタマイズ可能です｡
+          </div>
+          <div class="landing-simulator-detail-item-desc">
+            私たちが提供するテンプレートを変更し､あなたのフィッシング演習にあった形にカスタマイズすることができます｡さらには一般に知られた情報を用いたり､個人の情報を流用可能なデータフィールドを用いたりして､特定人物を狙ったスピアフィッシングのキャンペーンを作ることも可能です｡
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 landing-reveal">
+      <div class="landing-simulator-detail-item">
+        <div class="landing-simulator-detail-item-icon">
+          <img class="lazy" data-src="/static/img/landing/simulation_detail_spoof.99cb81711dd1.png"
+            alt="カスタマイズされたなりすまし送信者" />
+        </div>
+        <div class="landing-simulator-detail-item-info info-divider">
+          <div class="landing-simulator-detail-item-title">
+            カスタマイズされたなりすまし送信者
+          </div>
+          <div class="landing-simulator-detail-item-desc">
+            差出人の名前とメールアドレスを編集することができます｡シナリオに合わせた名前とメールアドレスを使うことができます｡
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 landing-reveal">
+      <div class="landing-simulator-detail-item">
+        <div class="landing-simulator-detail-item-icon">
+          <img class="lazy" data-src="/static/img/landing/simulation_detail_alert.47616749cb11.png"
+            alt="受信者アラートオプション" />
+        </div>
+        <div class="landing-simulator-detail-item-info info-divider">
+          <div class="landing-simulator-detail-item-title">
+            受信者アラートオプション
+          </div>
+          <div class="landing-simulator-detail-item-desc">
+            キャンペーンにおける受信者への通知を､"キャンペーンが終わった時に受信"､"騙された時に受信"のどちらのタイミングで行うか設定できます｡通知しないという選択も可能です｡
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end detail -->
+<!-- start quiz -->
+<div class="container">
+  <div class="row landing-simulator-quiz landing-reveal">
+    <div class="landing-simulator-quiz-visual">
+      <img class="lazy" data-src="/static/img/landing/simulation_quiz.a6cb4f76f1a7.png"
+        alt="迅速な質問-フィッシングEメールを見分けなさい" />
+    </div>
+    <div class="landing-simulator-quiz-info" id="landing-simulator-quiz-info">
+      <div class="landing-simulator-quiz-answer-back landing-quiz-hide" id="landing-simulator-quiz-answer-back">
+        <button class="landing-simulator-quiz-back-btn" id="landing-simulation-quiz-btn-back"
+          onclick="quizAnswerBack()">❮ Back</button>
+      </div>
+      <div class="landing-simulator-quiz-info-question" id="landing-simulator-quiz-info-question">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="landing-simulator-quiz-question">
+            これはフィッシングメールですか？
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="landing-simulator-quiz-btns">
+            <button class="landing-btn landing-simulator-quiz-btn" id="landing-simulation-quiz-btn-phishing"
+              onclick="quizAnswerPhishing()">フィッシング</button>
+            <button class="landing-btn landing-simulator-quiz-btn" id="landing-simulation-quiz-btn-legit"
+              onclick="quizAnswerLegitimate()">本物</button>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="landing-simulation-quiz-disclaimer">
+            * LinkedInは演習のためのフィッシングメールの作成や送付､承認のいずれもしていません｡このメッセージはトレーニングの経験を最適なものとするためにLinkedIn (TM) を用いて本当のフィッシングメールに似通ったものにしています｡LinkedInはこれらの独自に作成されたフィッシングアウェアネス教材に関して全く責任を負っていません｡
+          </div>
+        </div>
+      </div>
+      <div class="landing-simulator-quiz-info-phishing landing-quiz-hide" id="landing-simulator-quiz-info-phishing">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="landing-simulator-quiz-answer-title">
+            正解です！ :)
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="landing-simulator-quiz-answer-subtitle">
+            しかし､同僚や仲間たちはこれがフィッシングメールだとわかるでしょうか？
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="landing-simulator-quiz-answer-desc">
+            53%の人々がこのメールのリンクをクリックしています｡<br/>悪人が仕掛ける前にあなたの社員のフィッシングアウェアネスをテストしましょう｡
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="landing-simulator-quiz-btns">
+            <a class="landing-btn landing-simulation-btn" id="simulation_quiz_phishing_sign_up"
+              href="/ja/accounts/?action=register"
+              onclick="UBT_event('Sign Up', 'Enter','From simulation quiz phishing');">開始する</a>
+          </div>
+        </div>
+      </div>
+      <div class="landing-simulator-quiz-info-legitimate landing-quiz-hide" id="landing-simulator-quiz-info-legitimate">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="landing-simulator-quiz-answer-title">
+            残念､不正解です :(
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="landing-simulator-quiz-answer-subtitle">
+            同僚や仲間たちはこれがフィッシングメールだとわかるでしょうか？
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="landing-simulator-quiz-answer-desc">
+            53%の人々がこのメールのリンクをクリックしています｡<br/>悪人が仕掛ける前にあなたの社員のフィッシングアウェアネスをテストしましょう｡
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="landing-simulator-quiz-btns">
+            <a class="landing-btn landing-simulation-btn" id="simulation_quiz_phishing_sign_up"
+              href="/ja/accounts/?action=register"
+              onclick="UBT_event('Sign Up', 'Enter','From simulation quiz legitimate');">開始する</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end quiz -->
+<!-- start action -->
+<div class="container-fuild landing-simulator-action-block">
+  <div class="landing-simulator-action-container">
+    <div class="landing-simulator-action-title">
+      今すぐあなたのキャンペーンを始めなさい
+    </div>
+    <div class="landing-simulator-action">
+      <a class="landing-btn landing-simulator-action-btn" id="simulator_sign_up"
+        href="/ja/accounts/?action=register"
+        onclick="UBT_event('Sign Up', 'Enter','From simulator');">開始する</a>
+    </div>
+    <button class="landing-simulator-action-top tablet-hide desktop-hide" onclick="scrollToTop()"
+      id="simulator_scroll_to_top"
+      title="↑ Back to Top">↑ Back to Top</button>
+  </div>
+</div>
+<!-- end action -->
+<!-- start modal -->
+<!-- Modal -->
+<div class="landing-saas-video-modal fade-out landing-simulator-hide" id="landing-saas-video-modal">
+  <div class="landing-saas-video-modal-background" onclick="hideSaasVideoModal()"></div>
+  <div class="landing-saas-video-modal-body">
+    <div class="landing-youtube-video-content">
+      <div class="landing-youtube-video-container">
+        <button type="button" class="landing-saas-video-modal-close"
+          onclick="hideSaasVideoModal()"><span>&times;</span></button>
+        <iframe id="landing-youtube-video" class="landing-youtube-video"
+          src="https://www.youtube.com/embed/26-Q8oMlWSU?autoplay=0" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end modal -->
+
+
+  
+
+
+
+<div id="landing-footer" class="landing-footer">
+  <div class="container">
+    <div class="col-xs-12 col-sm-4 section">
+      <div class="col-xs-12 landing-footer-section-title">Phish Insight</div>
+      <div id="landing-footer-page-home" class="col-xs-5 landing-footer-section-content">
+        <a href="/ja/" aria-label="ホーム">ホーム</a>
+      </div>
+      <div id="landing-footer-page-pricing" class="col-xs-7 landing-footer-section-content">
+        <a href="/ja/pricing"
+          aria-label="利用プラン">利用プラン</a>
+      </div>
+      <div id="landing-footer-page-simulation" class="col-xs-5 landing-footer-section-content">
+        <a href="/ja/simulator"
+          aria-label="シミュレーター">シミュレーター</a>
+      </div>
+      <div id="landing-footer-page-data-security" class="col-xs-7 landing-footer-section-content">
+        <a href="/ja/dataSecurity"
+          aria-label="データセキュリティ">データセキュリティ</a>
+      </div>
+      <div id="landing-footer-page-training" class="col-xs-12 landing-footer-section-content">
+        <a href="/ja/training"
+          aria-label="トレーニング">トレーニング</a>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6 section">
+      <div class="col-xs-12 landing-footer-section-title">トレンドマイクロ</div>
+      <div id="landing-footer-page-about" class="col-xs-12 landing-footer-section-content">
+        <a href="https://www.trendmicro.com/ja_jp/about.html" aria-label="会社概要" target="_blank"
+          rel="noopener">会社概要</a>
+      </div>
+      <div id="landing-footer-page-safetyCenter" class="col-xs-12 landing-footer-section-content">
+        <a href="https://global.sitesafety.trendmicro.com/?cc=jp" aria-label="Site Safety Center"
+          target="_blank" rel="noopener">Site Safety Center</a>
+      </div>
+      <div id="landing-footer-page-solutions" class="col-xs-12 landing-footer-section-content">
+        <a href="https://www.trendmicro.com/ja_jp/business/products/user-protection/sps/email-and-collaboration/hosted-email-security.html " aria-label="電子メールセキュリティソリューション"
+          target="_blank" rel="noopener">電子メールセキュリティソリューション</a>
+      </div>
+
+    </div>
+    <div class="col-xs-12 col-sm-2 landing-footer-language">
+      <div class="landing-footer-section-title">
+        Language
+      </div>
+      <div id="landing-lang-en" class="col-xs-12 landing-footer-section-content">
+        <a id="landing-lang-en-link" aria-label="English"
+          href="/en/">English</a>
+      </div>
+      <div id="landing-lang-zh-tw" class="col-xs-12 landing-footer-section-content">
+        <a id="landing-lang-zhtw-link" aria-label="中文"
+          href="/zh-tw/">中文</a>
+      </div>
+      <div id="landing-lang-ja" class="col-xs-12 landing-footer-section-content">
+        <a id="landing-lang-ja-link" aria-label="日本語"
+          href="/ja/">日本語</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 landing-footer-copyright">
+    Copyright © 2021 Trend Micro Incorporated. All rights reserved.
+  </div>
+</div>
+  
+  
+  <script src="/static/scripts/3rdParty/lazyload.min.b856c701a110.js"></script>
+  <script src="/static/scripts/3rdParty/scrollreveal.min.126cb7c43291.js"></script>
+  <script src="/static/dist/landing.bundle.6da4bb6b5d2d.js"></script>
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    var header = document.getElementById("landing-nav");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+
+
+
+<!-- Start of LiveChat (www.livechatinc.com) code -->
+<script type="text/javascript">
+  window.__lc = window.__lc || {};
+  window.__lc.license = 10033205;
+  window.__lc.visitor = {
+    name: ' ',
+    email: ''
+  };
+
+  (function () {
+    var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+    lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+  })();
+</script>
+<noscript>
+  <a href="https://www.livechatinc.com/chat-with/10033205/">Chat with us</a>,
+  powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener" target="_blank">LiveChat</a>
+</noscript>
+<!-- End of LiveChat code -->
+
+
+
+<!-- Aptrinsic Tag-->
+  <script type="text/javascript">
+  (function(n,t,a,e){var i="aptrinsic";n[i]=n[i]||function(){
+      (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;
+    var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
+    var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
+  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-6AFVPZTSM2SY-2");
+
+  aptrinsic("identify", {
+    //User Fields
+    "id": "", // Required for logged in app users
+  } );
+</script>
+<!-- End Aptrinsic Tag-->
+
+
+</html>
